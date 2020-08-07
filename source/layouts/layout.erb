@@ -7,22 +7,14 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "RaceCar" %></title>
 
-
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
-
-    <!-- build:css -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <%= stylesheet_link_tag 'main' %>
     <%= stylesheet_link_tag 'theme' %>
-    <!-- endbuild -->
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-
-
   </head>
 
   <body>
@@ -75,12 +67,7 @@
   </div>
   </footer>
 
-  <!-- build:js -->
-  <script src="assets/js/main.js"></script>
-  <!-- endbuild -->
-
-  <script src="assets/js/theme.js"></script>
-
+  <%= javascript_include_tag 'all.bundle' %>
 </body>
 
 </html>

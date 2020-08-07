@@ -8,6 +8,12 @@ set :css_dir,    'assets/css'
 set :images_dir, 'assets/images'
 set :js_dir,     'assets/javascripts'
 
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? 'yarn run build' : 'yarn run start',
+  source: '.tmp/dist',
+  latency: 1
+
 #activate :minify_css
 configure :build do
   activate :favicon_maker do |f|

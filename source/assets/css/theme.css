@@ -13,12 +13,18 @@ $bright_blue: #00CCFF;
   src: url('/assets/webfonts/ZonaPro-Bold.otf') format('opentype');
 }
 
+.sketchfab-embed-wrapper iframe {
+  width: 100%;
+  height: 50vh;
+  touch-action: none;
+}
+
 body {
 	width:100%;
 	height:100%;
 	font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	color:#fff;
-	 font-weight:300;
+	font-weight:300;
 }
 html {
 	width:100%;
@@ -26,8 +32,6 @@ html {
 }
 h1,h2,h3,h4,h5,h6 {
 	margin:0 0 35px;
-	text-transform:lowercase;
-	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-family:"ZonaPro Bold", Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:0;
 	color: #1E0D61;
@@ -131,6 +135,9 @@ a:hover,a:focus {
 }
 .nav-link.active:hover {
 	color:#00CCFF;
+}
+.sketchfab-embed-wrapper {
+	width: 100%;
 }
 @media(min-width:768px) {
 	.navbar-custom {

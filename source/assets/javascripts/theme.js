@@ -1,4 +1,4 @@
-import * as $ from 'jquery'
+const $ = require('jquery');
 
 $( document ).ready(function() {
 

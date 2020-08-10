@@ -13,46 +13,24 @@ section#cars
     .row.justify-content-center
       .col-md-8
         h3 RC-15 (2010)
-        div = image_tag 'pictures/rc-15.jpg'
+        = image_tag 'pictures/rc-15.jpg'
         p Lorem ipsum
 
         h3 Aston Martin (2010)
-        p
-          | Lorem ipsum
-
-        h3 RC-09-CY (2009)
-        .sketchfab-embed-wrapper
-          iframe allow=("autoplay; fullscreen; vr") frameborder="0" mozallowfullscreen="true" src="https://sketchfab.com/models/8f5346b846a74cea826eba384af222d0/embed?autospin=0.2&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" title=("A 3D model") webkitallowfullscreen="true"
+        = image_tag 'cars/RC-11-EF/GRAB_052.JPG'
         p Lorem ipsum
-        .lightbox-gallery
-          .container
-            .row.photos
-              .col-sm-6.col-md-4.col-lg-3.item
-                a data-lightbox="photos" href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190720/gallery/original/02_o_car.jpg"
-                  img.img-fluid src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190720/gallery/original/02_o_car.jpg" /
-              .col-sm-6.col-md-4.col-lg-3.item
-                a data-lightbox="photos" href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190718/gallery/original/03_r_car.jpg"
-                  img.img-fluid src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190718/gallery/original/03_r_car.jpg" /
-              .col-sm-6.col-md-4.col-lg-3.item
-                a data-lightbox="photos" href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190717/gallery/original/04_g_car.jpg"
-                  img.img-fluid src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190717/gallery/original/04_g_car.jpg" /
-              .col-sm-6.col-md-4.col-lg-3.item
-                a data-lightbox="photos" href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190715/gallery/original/01_b_car.jpg"
-                  img.img-fluid src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190715/gallery/original/01_b_car.jpg" /
-            .row.photos
-              .col-sm-6.col-md-4.col-lg-3.item
-                a data-lightbox="photos" href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190720/gallery/original/02_o_car.jpg"
-                  img.img-fluid src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190720/gallery/original/02_o_car.jpg" /
-              .col-sm-6.col-md-4.col-lg-3.item
-                a data-lightbox="photos" href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190715/gallery/original/01_b_car.jpg"
-                  img.img-fluid src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190715/gallery/original/01_b_car.jpg" /
-              .col-sm-6.col-md-4.col-lg-3.item
-                a data-lightbox="photos" href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190718/gallery/original/03_r_car.jpg"
-                  img.img-fluid src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190718/gallery/original/03_r_car.jpg" /
-              .col-sm-6.col-md-4.col-lg-3.item
-                a data-lightbox="photos" href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190717/gallery/original/04_g_car.jpg"
-                  img.img-fluid src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190717/gallery/original/04_g_car.jpg" /
 
+        .container
+          .row.mb-3
+            = link_to '/assets/images/cars/RC-11-EF/grab_005.jpg', class: 'col-md-4', 'data-lightbox' => 'photos-rc11ef' do
+              = image_tag 'cars/RC-11-EF/grab_005.jpg', class: 'img-fluid'
+            = link_to 'assets/images/cars/RC-11-EF/GRAB_028.jpg', class: 'col-md-4', 'data-lightbox' => 'photos-rc11ef' do
+              = image_tag 'cars/RC-11-EF/GRAB_028.jpg', class: 'img-fluid'
+            = link_to 'assets/images/cars/RC-11-EF/GRAB_039.jpg', class: 'col-md-4', 'data-lightbox' => 'photos-rc11ef' do
+              = image_tag 'cars/RC-11-EF/GRAB_039.jpg', class: 'img-fluid'
+
+    .row.justify-content-center
+      .col-md-8
         h3 RC-01-NC (2005)
         p the Nascar one
 

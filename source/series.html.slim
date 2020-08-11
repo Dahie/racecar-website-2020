@@ -16,6 +16,15 @@ section#cars
         = image_tag 'pictures/rc-15.jpg'
         p Lorem ipsum
 
+        .container
+          .row.mb-3
+            = link_to '/assets/images/cars/RC-15/GRAB_015.JPG', class: 'col-md-4', 'data-lightbox' => 'photos-rc15' do
+              = image_tag 'cars/RC-15/GRAB_015.JPG', class: 'img-fluid'
+            = link_to 'assets/images/cars/RC-15/GRAB_016.JPG', class: 'col-md-4', 'data-lightbox' => 'photos-rc15' do
+              = image_tag 'cars/RC-15/GRAB_016.JPG', class: 'img-fluid'
+            = link_to 'assets/images/cars/RC-15/GRAB_023.JPG', class: 'col-md-4', 'data-lightbox' => 'photos-rc15' do
+              = image_tag 'cars/RC-15/GRAB_023.JPG', class: 'img-fluid'
+
         h3 Aston Martin (2010)
         = image_tag 'cars/RC-11-EF/GRAB_052.JPG'
         p Lorem ipsum
@@ -32,7 +41,18 @@ section#cars
     .row.justify-content-center
       .col-md-8
         h3 RC-01-NC (2005)
-        p the Nascar one
+        = image_tag 'cars/RC-01-NC/133.jpg'
+
+        p the Nascar one Chevrolet
+
+        .container
+          .row.mb-3
+            = link_to '/assets/images/cars/RC-01-NC/130.jpg', class: 'col-md-4', 'data-lightbox' => 'photos-rc01nc' do
+              = image_tag 'cars/RC-01-NC/130.jpg', class: 'img-fluid'
+            = link_to 'assets/images/cars/RC-01-NC/136.jpg', class: 'col-md-4', 'data-lightbox' => 'photos-rc01nc' do
+              = image_tag 'cars/RC-01-NC/136.jpg', class: 'img-fluid'
+            = link_to 'assets/images/cars/RC-01-NC/135.jpg', class: 'col-md-4', 'data-lightbox' => 'photos-rc01nc' do
+              = image_tag 'cars/RC-01-NC/135.jpg', class: 'img-fluid'
 
   /! Section
   section#pageid

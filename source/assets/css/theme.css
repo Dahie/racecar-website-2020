@@ -210,6 +210,7 @@ a:hover,a:focus {
 	}
 	.intro.vh-30 {
 		height: 30vh;
+		background-position-y: -30vh;
 	}
 	.intro .intro-body .brand-heading {
 			font-size:60px;

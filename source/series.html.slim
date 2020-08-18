@@ -7,60 +7,64 @@ title: RaceCar - Series cars
     .container
       .row.justify-content-center
         .col-md-8
-          h1.brand-heading Historic cars
+          h1.brand-heading Series cars
 section#cars
   .container.content-section
     .row.justify-content-center
       .col-md-8
-        h3 RC-15 (2010)
-        = image_tag 'pictures/rc-15.jpg'
-        p Lorem ipsum
-
-        .container
-          .row.mb-3
-            = link_to image_path('cars/RC-15/GRAB_015.JPG'), class: 'col-md-4', 'data-lightbox' => 'photos-rc15' do
-              = image_tag 'cars/RC-15/GRAB_015.JPG', class: 'img-fluid'
-            = link_to image_path('cars/RC-15/GRAB_016.JPG'), class: 'col-md-4', 'data-lightbox' => 'photos-rc15' do
-              = image_tag 'cars/RC-15/GRAB_016.JPG', class: 'img-fluid'
-            = link_to image_path('cars/RC-15/GRAB_023.JPG'), class: 'col-md-4', 'data-lightbox' => 'photos-rc15' do
-              = image_tag 'cars/RC-15/GRAB_023.JPG', class: 'img-fluid'
-
-        h3 Aston Martin (2010)
-        = image_tag 'cars/RC-11-EF/GRAB_052.JPG'
-        p Lorem ipsum
-
-        .container
-          .row.mb-3
-            = link_to image_path('cars/RC-11-EF/grab_005.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc11ef' do
-              = image_tag 'cars/RC-11-EF/grab_005.jpg', class: 'img-fluid'
-            = link_to image_path('cars/RC-11-EF/GRAB_028.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc11ef' do
-              = image_tag 'cars/RC-11-EF/GRAB_028.jpg', class: 'img-fluid'
-            = link_to image_path('cars/RC-11-EF/GRAB_039.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc11ef' do
-              = image_tag 'cars/RC-11-EF/GRAB_039.jpg', class: 'img-fluid'
+        .card.mb-3
+          = image_tag 'pictures/rc-15.jpg'
+          .card-body
+            h5.card-title RC-15 (2010)
+            p.card-text
+              | In addition to the German Simracing Touring Car Championship (DSTM), the German Simracing Formula Championship (DSFM) was established soon afterwards. On the basis of the standard cars, Daniel Fredrich designed the RC-15 and thus created the first RaceCar monoposto in years. Three of the cars take part: two RaceCars, one Mirage.
+            .container
+              .row.mb-3
+                = link_to image_path('cars/RC-15/GRAB_015.JPG'), class: 'col-md-4', 'data-lightbox' => 'photos-rc15' do
+                  = image_tag 'cars/RC-15/GRAB_015.JPG', class: 'img-fluid'
+                = link_to image_path('cars/RC-15/GRAB_016.JPG'), class: 'col-md-4', 'data-lightbox' => 'photos-rc15' do
+                  = image_tag 'cars/RC-15/GRAB_016.JPG', class: 'img-fluid'
+                = link_to image_path('cars/RC-15/GRAB_023.JPG'), class: 'col-md-4', 'data-lightbox' => 'photos-rc15' do
+                  = image_tag 'cars/RC-15/GRAB_023.JPG', class: 'img-fluid'
 
     .row.justify-content-center
       .col-md-8
-        h3 RC-01-NC (2005)
-        = image_tag 'cars/RC-01-NC/133.jpg'
+        .card.mb-3
+          = image_tag 'cars/RC-11-EF/GRAB_052.JPG'
+          .card-body
+            h5.card-title Aston Martin RC-11-EF (2011)
+            p.card-text
+              | With the end of the Grand Prix 4 leagues, RaceCar changes to a completely different world of motorsport: to NASCAR. In the European NASCAR League three Chevrolet Monte Carlo start as RC-01NC with a design inspired by the RC-14.
+            .container
+              .row.mb-3
+                = link_to image_path('cars/RC-11-EF/grab_005.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc11ef' do
+                  = image_tag 'cars/RC-11-EF/grab_005.jpg', class: 'img-fluid'
+                = link_to image_path('cars/RC-11-EF/GRAB_028.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc11ef' do
+                  = image_tag 'cars/RC-11-EF/GRAB_028.jpg', class: 'img-fluid'
+                = link_to image_path('cars/RC-11-EF/GRAB_039.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc11ef' do
+                  = image_tag 'cars/RC-11-EF/GRAB_039.jpg', class: 'img-fluid'
 
-        p the Nascar one Chevrolet
+    .row.justify-content-center
+      .col-md-8
+        .card.mb-3
+          = image_tag 'cars/RC-01-NC/133.jpg'
+          .card-body
+            h5.card-title Chevrolet RC-01-NC (2005)
+            p.card-text
+              | With the end of the Grand Prix 4 leagues, RaceCar changes to a completely different world of motorsport: to NASCAR. In the European NASCAR League three Chevrolet Monte Carlo start as RC-01-NC with a design inspired by the RC-14.
+            .container
+              .row.mb-3
+                = link_to image_path('cars/RC-01-NC/130.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc01nc' do
+                  = image_tag 'cars/RC-01-NC/130.jpg', class: 'img-fluid'
+                = link_to image_path('cars/RC-01-NC/136.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc01nc' do
+                  = image_tag 'cars/RC-01-NC/136.jpg', class: 'img-fluid'
+                = link_to image_path('cars/RC-01-NC/135.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc01nc' do
+                  = image_tag 'cars/RC-01-NC/135.jpg', class: 'img-fluid'
 
-        .container
-          .row.mb-3
-            = link_to image_path('cars/RC-01-NC/130.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc01nc' do
-              = image_tag 'cars/RC-01-NC/130.jpg', class: 'img-fluid'
-            = link_to image_path('cars/RC-01-NC/136.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc01nc' do
-              = image_tag 'cars/RC-01-NC/136.jpg', class: 'img-fluid'
-            = link_to image_path('cars/RC-01-NC/135.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc01nc' do
-              = image_tag 'cars/RC-01-NC/135.jpg', class: 'img-fluid'
-
-  /! Section
   section#pageid
     .container.content-section
       .row.justify-content-center
         .col-md-8
-          h2.text-center Subtitle Here
-          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-          p Donec pede justo, fringilla vel, aldiquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-          p Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
-          p Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+          h2.text-center About our series cars
+          p
+            | We participated in many series where the car models were set and we only styled our liveries.

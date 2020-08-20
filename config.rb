@@ -46,9 +46,17 @@ end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :rsync
-  deploy.host = 'www.unmedial.de'
-  deploy.path = 'racecar-2020/'
-  deploy.user = 'u19168'
+
+  if ENV.fetch('ENV', nil) == 'production'
+    deploy.host = 'v033134.kasserver.com'
+    deploy.path = '/www/htdocs/w01af025/team-racecar.org/'
+    deploy.user = 'ssh-w01af025'
+  else
+    deploy.host = 'www.unmedial.de'
+    deploy.path = 'racecar-2020/'
+    deploy.user = 'u19168'
+  end
+
   deploy.build_before  = true # always use --no-clean options
   # Optional Settings
   # deploy.port  = 5309 # ssh port, default: 22

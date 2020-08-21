@@ -156,7 +156,7 @@ a:hover,a:focus {
 		background:#fff;
 	}
 	.navbar-custom.top-nav-collapse a {
-			color:#333;
+			color: #1E0D61;
 			display:inline-block;
 	}
 	.navbar-expand-md .navbar-custom.navbar-nav .nav-link {
@@ -367,7 +367,7 @@ footer p {
 	margin:0;
 	font-size:15px;
 }
-footer p.credits {
+footer .credits {
 	font-size:13px;
 	letter-spacing:3px;
 }

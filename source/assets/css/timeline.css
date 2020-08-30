@@ -220,11 +220,13 @@
     margin-bottom: 0px;
     min-height: 0px;
     right: 0px;
+    height: auto;
   }
   .timeline > li:nth-child(odd) {
     margin-bottom: 0px;
     min-height: 0px;
     left: 0px;
+    height: auto;
   }
   .timeline>li .timeline-image {
     position: static;

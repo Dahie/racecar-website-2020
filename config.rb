@@ -8,6 +8,8 @@ set :css_dir,    'assets/css'
 set :images_dir, 'assets/images'
 set :js_dir,     'assets/javascripts'
 
+activate :dragonfly_thumbnailer
+
 activate :external_pipeline,
   name: :webpack,
   command: build? ? 'yarn run build' : 'yarn run start',

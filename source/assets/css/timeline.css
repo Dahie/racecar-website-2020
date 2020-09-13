@@ -60,9 +60,9 @@
     z-index: 100;
     position: absolute;
     left: 50%;
-    border: 4px solid #00CCFF;
+    border: 4px solid var(--secondary-color);
     border-radius: 100%;
-    background-color: #00CCFF;
+    background-color: var(--secondary-color);
     width: 200px;
     height: 200px;
     margin-left: -100px;
@@ -127,7 +127,7 @@
     left: 690px;
     width: 4px;
     height:340px;
-    background-color: #00CCFF;
+    background-color: var(--secondary-color);
     -ms-transform: rotate(-44deg); /* IE 9 */
     -webkit-transform: rotate(-44deg); /* Safari */
     transform: rotate(-44deg);
@@ -141,7 +141,7 @@
     left: 450px;
     width: 4px;
     height:340px;
-    background-color: #00CCFF;
+    background-color: var(--secondary-color);
     -ms-transform: rotate(44deg); /* IE 9 */
     -webkit-transform: rotate(44deg); /* Safari */
     transform: rotate(44deg);

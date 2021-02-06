@@ -13,6 +13,23 @@ section#cars
     .row.justify-content-center
       .col-md-8
         .card.mb-3
+          = image_tag 'cars/RC-20-EF/pic1.jpg'
+          .card-body
+            h5.card-title RC-20-EF - Mercedes AMG GT3 - 2020
+            p.card-text
+              | With its new manufacturer, RaceCar participated in various online compeitions. After a long break, the new RaceCar colors adorned a car again.
+            .container
+              .row.mb-3
+                = link_to image_path('cars/RC-20-EF/pic2.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc20ef' do
+                  = thumb_tag 'cars/RC-20-EF/pic2.jpg', '206x116#', class: 'img-fluid'
+                = link_to image_path('cars/RC-20-EF/pic3.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc20ef' do
+                  = thumb_tag 'cars/RC-20-EF/pic3.jpg', '206x116#', class: 'img-fluid'
+                = link_to image_path('cars/RC-20-EF/pic4.jpg'), class: 'col-md-4', 'data-lightbox' => 'photos-rc20ef' do
+                  = thumb_tag 'cars/RC-20-EF/pic4.jpg', '206x116#', class: 'img-fluid'
+
+    .row.justify-content-center
+      .col-md-8
+        .card.mb-3
           = image_tag 'cars/RC-13-EF/7644_653634137988958_1743095163_n.jpg'
           .card-body
             h5.card-title RC-13-EF - Aston Martin - 2013

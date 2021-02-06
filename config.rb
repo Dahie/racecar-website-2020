@@ -45,7 +45,6 @@ configure :build do
   activate :relative_assets
 end
 
-
 activate :deploy do |deploy|
   deploy.deploy_method = :rsync
 

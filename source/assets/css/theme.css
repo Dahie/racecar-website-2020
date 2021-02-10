@@ -244,6 +244,9 @@ a:hover,a:focus {
 		height: 30vh;
 		background-position-y: -30vh;
 	}
+	.intro.vh-30 .intro-body::after {
+		height: 30vh;
+	}
 	.intro .intro-body .brand-heading {
 			font-size:60px;
 			margin-top:90px;

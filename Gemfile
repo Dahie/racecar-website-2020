@@ -7,3 +7,4 @@ gem 'middleman-deploy', git: 'https://github.com/middleman-contrib/middleman-dep
 gem 'middleman-dragonfly_thumbnailer'
 gem 'slim',                    '~> 3.0.7'
 gem 'rake'
+gem 'webrick'

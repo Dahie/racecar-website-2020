@@ -1,5 +1,5 @@
 ---
-title: Drive - RaceCar
+title: Drive support - RaceCar
 ---
 
 .intro.vh-30
@@ -10,7 +10,19 @@ title: Drive - RaceCar
           h1.brand-heading Drive
 section#cars
   .container.content-section
+    h3.text-center Trackmaps
     .row.mb-3
       - %w[barcelona brands-hatch donington kyalami laguna-seca misano monza nuerburgring spa suzuka zolder].each do |track|
         = link_to image_path("trackmaps/#{track}.png"), class: 'col-md-4', 'data-lightbox' => "photos-#{track}" do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
+
+section#links
+  .container.content-section
+    .row.justify-content-center
+      .col-lg-8
+        h3.text-center Links
+        ul
+          li= link_to 'Coach Dave Academy', 'https://coachdaveacademy.com/', target: :blank
+          li= link_to 'The Sim Grid Daily Races', 'https://beta.thesimgrid.com', target: :blank
+          li= link_to 'Fuel calculator', 'https://mythiq.net/fuelcalc/', target: :blank
+          li= link_to 'FOV calculator', 'https://dinex86.github.io/FOV-Calculator/', target: :blank

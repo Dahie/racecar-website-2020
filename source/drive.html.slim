@@ -1,0 +1,16 @@
+---
+title: Drive - RaceCar
+---
+
+.intro.vh-30
+  .intro-body
+    .container
+      .row.justify-content-center
+        .col-md-8
+          h1.brand-heading Drive
+section#cars
+  .container.content-section
+    .row.mb-3
+      - %w[barcelona brands-hatch donington kyalami laguna-seca misano monza nuerburgring spa suzuka zolder].each do |track|
+        = link_to image_path("trackmaps/#{track}.png"), class: 'col-md-4', 'data-lightbox' => "photos-#{track}" do
+          = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'

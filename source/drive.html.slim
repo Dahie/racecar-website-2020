@@ -8,13 +8,75 @@ title: Drive support - RaceCar
       .row.justify-content-center
         .col-md-8
           h1.brand-heading Drive
-section#cars
+section#trackmaps
   .container.content-section
     h3.text-center Trackmaps
     .row.mb-3
-      - %w[barcelona brands-hatch donington kyalami laguna-seca misano monza nuerburgring spa suzuka zolder].each do |track|
+      - %w[barcelona brands-hatch donington kyalami laguna-seca misano monza nuerburgring paul-ricard spa suzuka zandvoort zolder].each do |track|
         = link_to image_path("trackmaps/#{track}.png"), class: 'col-md-4', 'data-lightbox' => "photos-#{track}" do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
+
+
+section#tracks
+  .container.content-section
+    h3.text-center Track guide
+    .row.mb-3
+      .card.col-md-4
+        = link_to image_path("trackmaps/spa.png"), 'data-lightbox' => "photos-spa" do
+          = thumb_tag "trackmaps/spa.png", '390x202#', class: 'img-fluid'
+        .card-body
+          h5.card-title Spa-Francorchamps
+          p.card-text Settings for Mercedes SLS AMG GT3 (2015)
+          p.card-text
+            | Dry reference time:
+            strong 2:17.0
+          table.table
+            thead
+              tr
+                th
+                th 30min
+                th 60min
+            tbody
+              tr
+                th Dry (2:25)
+                td 55l
+                td 102l
+              tr
+                th Wet (2:45)
+                td 45l
+                td 90l
+          = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=DYf8_CALX8g'
+
+      .card.col-md-4
+        = link_to image_path("trackmaps/zolder.png"), 'data-lightbox' => "photos-spa" do
+          = thumb_tag "trackmaps/zolder.png", '390x202#', class: 'img-fluid'
+        .card-body
+          h5.card-title Zolder
+          p.card-text Settings for Mercedes SLS AMG GT3 (2015)
+          p.card-text
+            | Dry reference time:
+            strong 1:27.3
+          table.table
+            thead
+              tr
+                th
+                th 30min
+                th 60min
+            tbody
+              tr
+                th Dry (-)
+                td
+                td
+              tr
+                th Wet (-)
+                td
+                td
+          = link_to 'Watch Coaching with Gregor Schill', '#'
+
+
+    | GT3 2019 - 27.5-28.0
+    | GT3 2020 - 27.3-27.8
+    | https://www.youtube.com/watch?v=qAGAnnIfmRM&feature=youtu.be
 
 section#links
   .container.content-section
@@ -26,3 +88,12 @@ section#links
           li= link_to 'The Sim Grid Daily Races', 'https://beta.thesimgrid.com', target: :blank
           li= link_to 'Fuel calculator', 'https://mythiq.net/fuelcalc/', target: :blank
           li= link_to 'FOV calculator', 'https://dinex86.github.io/FOV-Calculator/', target: :blank
+          li
+            | https://www.youtube.com/watch?v=2RKqCQT3DZI imola coaching
+          li
+            | https://www.youtube.com/watch?v=bU0tUXPB7Rw zandvoort coaching
+          li
+            | https://www.youtube.com/watch?v=6Nf8lkz5mZ4 misano coaching
+          li
+            | https://www.youtube.com/watch?v=9llv5CAy9-0 monza coaching
+

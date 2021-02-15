@@ -12,7 +12,7 @@ section#trackmaps
   .container.content-section
     h3.text-center Trackmaps
     .row.mb-3
-      - %w[barcelona brands-hatch donington kyalami laguna-seca misano monza nuerburgring paul-ricard spa suzuka zandvoort zolder].each do |track|
+      - %w[barcelona brands-hatch donington imola kyalami laguna-seca misano monza nuerburgring paul-ricard spa suzuka zandvoort zolder].each do |track|
         = link_to image_path("trackmaps/#{track}.png"), class: 'col-md-4', 'data-lightbox' => "photos-#{track}" do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
 
@@ -21,57 +21,89 @@ section#tracks
   .container.content-section
     h3.text-center Track guide
     .row.mb-3
-      .card.col-md-4
-        = link_to image_path("trackmaps/spa.png"), 'data-lightbox' => "photos-spa" do
-          = thumb_tag "trackmaps/spa.png", '390x202#', class: 'img-fluid'
-        .card-body
-          h5.card-title Spa-Francorchamps
-          p.card-text Settings for Mercedes SLS AMG GT3 (2015)
-          p.card-text
-            | Dry reference time:
-            strong 2:17.0
-          table.table
-            thead
-              tr
-                th
-                th 30min
-                th 60min
-            tbody
-              tr
-                th Dry (2:25)
-                td 55l
-                td 102l
-              tr
-                th Wet (2:45)
-                td 45l
-                td 90l
-          = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=DYf8_CALX8g'
+      .col-md-4
+        .card
+          = link_to image_path("trackmaps/imola.png"), 'data-lightbox' => "photos-spa" do
+            = thumb_tag "trackmaps/imola.png", '390x202#', class: 'img-fluid'
+          .card-body
+            h5.card-title Imola
+            p.card-text Settings for Mercedes SLS AMG GT3 (2015)
+            table.table
+              thead
+                tr
+                  th
+                  th 30min
+                  th 60min
+              tbody
+                tr
+                  th Dry (1:42)
+                  td 59l
+                  td 117l
+                tr
+                  th Wet (2:00)
+                  td 46l
+                  td 91l
+          ul.list-group.list-group-flush
+            li.list-group-item
+              | Dry reference:
+              strong  1:40.3
+            li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=2RKqCQT3DZI'
 
-      .card.col-md-4
-        = link_to image_path("trackmaps/zolder.png"), 'data-lightbox' => "photos-spa" do
-          = thumb_tag "trackmaps/zolder.png", '390x202#', class: 'img-fluid'
-        .card-body
-          h5.card-title Zolder
-          p.card-text Settings for Mercedes SLS AMG GT3 (2015)
-          p.card-text
-            | Dry reference time:
-            strong 1:27.3
-          table.table
-            thead
-              tr
-                th
-                th 30min
-                th 60min
-            tbody
-              tr
-                th Dry (-)
-                td
-                td
-              tr
-                th Wet (-)
-                td
-                td
-          = link_to 'Watch Coaching with Gregor Schill', '#'
+      .col-md-4
+        .card
+          = link_to image_path("trackmaps/spa.png"), 'data-lightbox' => "photos-spa" do
+            = thumb_tag "trackmaps/spa.png", '390x202#', class: 'img-fluid'
+          .card-body
+            h5.card-title Spa-Francorchamps
+            p.card-text Settings for Mercedes SLS AMG GT3 (2015)
+            table.table
+              thead
+                tr
+                  th
+                  th 30min
+                  th 60min
+              tbody
+                tr
+                  th Dry (2:25)
+                  td 55l
+                  td 102l
+                tr
+                  th Wet (2:45)
+                  td 45l
+                  td 90l
+          ul.list-group.list-group-flush
+            li.list-group-item
+              | Dry reference:
+              strong  2:17.0
+            li.list-group-item = link_to 'Watch Coaching with Gregor Schill pt1', 'https://www.youtube.com/watch?v=DYf8_CALX8g'
+            li.list-group-item = link_to 'Watch Coaching with Gregor Schill p2', 'https://youtu.be/MEMXfgttHVE?t=926'
+
+      .col-md-4
+        .card
+          = link_to image_path("trackmaps/zolder.png"), 'data-lightbox' => "photos-spa" do
+            = thumb_tag "trackmaps/zolder.png", '390x202#', class: 'img-fluid'
+          .card-body
+            h5.card-title Zolder
+            p.card-text Settings for Mercedes SLS AMG GT3 (2015)
+            table.table
+              thead
+                tr
+                  th
+                  th 30min
+                  th 60min
+              tbody
+                tr
+                  th Dry (-)
+                  td
+                  td
+                tr
+                  th Wet (-)
+                  td
+                  td
+          ul.list-group.list-group-flush
+            li.list-group-item
+              | Dry reference:
+              strong  1:27.3
 
 
     | GT3 2019 - 27.5-28.0
@@ -88,8 +120,6 @@ section#links
           li= link_to 'The Sim Grid Daily Races', 'https://beta.thesimgrid.com', target: :blank
           li= link_to 'Fuel calculator', 'https://mythiq.net/fuelcalc/', target: :blank
           li= link_to 'FOV calculator', 'https://dinex86.github.io/FOV-Calculator/', target: :blank
-          li
-            | https://www.youtube.com/watch?v=2RKqCQT3DZI imola coaching
           li
             | https://www.youtube.com/watch?v=bU0tUXPB7Rw zandvoort coaching
           li

@@ -58,9 +58,9 @@ a {
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
+	text-decoration: underline;
 }
 a:hover,a:focus {
-	text-decoration:none;
 	color:inherit;
 }
 .alignleft {
@@ -84,11 +84,13 @@ a:hover,a:focus {
 .navbar-custom .dropdown-item {
 	font-size:13px;
   text-transform: none;
+  text-decoration: none;
 }
 .navbar-custom .navbar-brand {
 	font-size:20px;
 	text-transform: lowercase;
 	letter-spacing: 1px;
+	text-decoration: none;
 }
 .navbar-custom .navbar-brand:after {
   content: "";
@@ -114,6 +116,7 @@ a:hover,a:focus {
 .nav-link {
 	padding-right:1rem;
 	padding-left:1rem;
+	text-decoration: none
 }
 .nav-link a {
 	-webkit-transition:background .3s ease-in-out;
@@ -160,6 +163,7 @@ a:hover,a:focus {
 	.navbar-custom.top-nav-collapse a {
 			color: var(--primary-color);
 			display:inline-block;
+			text-decoration: none;
 	}
 	.navbar-expand-md .navbar-custom.navbar-nav .nav-link {
 		padding-right:1rem;
@@ -338,6 +342,7 @@ a:hover,a:focus {
 .btn {
 	border-radius:0;
 	text-transform:uppercase;
+	text-decoration: none;
 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:400;
 	-webkit-transition:all .3s ease-in-out;

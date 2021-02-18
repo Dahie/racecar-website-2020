@@ -12,7 +12,7 @@ section#trackmaps
   .container.content-section
     h3.text-center Trackmaps
     .row.mb-3
-      - %w[barcelona brands-hatch donington imola kyalami laguna-seca misano monza nuerburgring paul-ricard spa suzuka zandvoort zolder].each do |track|
+      - %w[barcelona brands-hatch donington hungaroring imola kyalami laguna-seca misano monza mount-panorama nuerburgring paul-ricard silverstone spa suzuka zandvoort zolder].each do |track|
         = link_to image_path("trackmaps/#{track}.png"), class: 'col-md-4', 'data-lightbox' => "photos-#{track}" do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
 

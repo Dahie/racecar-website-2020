@@ -86,6 +86,9 @@ a:hover,a:focus {
   text-transform: none;
   text-decoration: none;
 }
+.dropdown-item:active {
+	background-color: var(--secondary-color);
+}
 .navbar-custom .navbar-brand {
 	font-size:20px;
 	text-transform: lowercase;

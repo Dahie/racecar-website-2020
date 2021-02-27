@@ -1,12 +1,14 @@
-#suzuka.card.mb-3
-  .card-header Suzuka
+#monza.card.mb-3
+  .card-header Monza
   .row.no-gutters
     .col-md-6
-      = link_to image_path("trackmaps/suzuka.png"), 'data-lightbox' => "trackmaps" do
-        = thumb_tag "trackmaps/suzuka.png", '500x350#', class: 'img-fluid'
+      = link_to image_path("trackmaps/monza.png"), 'data-lightbox' => "trackmaps" do
+        = thumb_tag "trackmaps/monza.png", '500x350#', class: 'img-fluid'
       .card-body
         p.card-text
           | Settings for Mercedes-AMG GT3 (2015) based on Coach-Dave-Academy Race-Setup
+      ul.list-group.list-group-flush
+        li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=9llv5CAy9-0'
 
     .col-md-6
       .card-body
@@ -14,20 +16,20 @@
           thead
             tr
               th Fuel for Stint
-              th Dry (tbd)
+              th Dry (1:51)
               th Wet (tbd)
           tbody
             tr
               th 30min
-              td
+              td 63l
               td
             tr
               th 60min
-              td
+              td 119l
               td
             tr
               th Fuel usage SEN
-              td
+              td 3.7l
               td
             tr
               th Fuel usage FRE
@@ -35,7 +37,7 @@
               td
             tr
               th Pitlane delta
-              td
+              td 55s
               td
           thead
             tr
@@ -48,11 +50,11 @@
               td
                 table.table-bordered
                   tr
-                    td
-                    td
+                    td 26.4
+                    td 27.5
                   tr
-                    td
-                    td
+                    td 26.8
+                    td 27.5
               td
 
             tr
@@ -60,11 +62,11 @@
               td
                 table.table-bordered
                   tr
-                    td
-                    td
+                    td 25.7
+                    td 26.9
                   tr
-                    td
-                    td
+                    td 25.7
+                    td 26.9
               td
 
             tr
@@ -92,6 +94,6 @@
               td 30.0 psi
             tr
               th CDA reference
-              td 1:59.8
+              td 1:47.2
               td
                 -

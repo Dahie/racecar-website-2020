@@ -12,10 +12,12 @@ section#trackmaps
   .container.content-section
     h3.text-center Trackmaps
     .row
-      - %w[barcelona brands-hatch donington hungaroring imola kyalami laguna-seca misano monza mount-panorama nuerburgring oulton-park paul-ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
+      - %w[barcelona brands-hatch donington hungaroring imola kyalami laguna-seca misano mount-panorama nuerburgring oulton-park paul-ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
         = link_to image_path("trackmaps/#{track}.png"), class: 'col-md-2 mb-3', 'data-lightbox' => "trackmaps" do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
-
+      - %w[monza spa suzuka zandvoort zolder].each do |track|
+        = link_to "##{track}", class: 'col-md-2 mb-3' do
+          = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
 
 section#tracks
   .container.content-section
@@ -215,33 +217,8 @@ section#tracks
             li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=6Nf8lkz5mZ4'
 
 
-      .col-md-4
-        .card.mb-3
-          = link_to image_path("trackmaps/monza.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/monza.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Monza
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (-)
-                  td
-                  td
-                tr
-                  th Wet (-)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:47.2
-            li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=9llv5CAy9-0'
+      .col-md-12
+        = partial 'monza'
 
       .col-md-4
         .card.mb-3
@@ -418,32 +395,8 @@ section#tracks
       .col-md-12
         = partial 'zandvoort'
 
-      .col-md-4
-        .card.mb-3
-          = link_to image_path("trackmaps/zolder.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/zolder.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Zolder
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (-)
-                  td
-                  td
-                tr
-                  th Wet (-)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:27.8
+      .col-md-12
+        = partial 'zolder'
 
 
     | GT3 2019 - 27.5-28.0

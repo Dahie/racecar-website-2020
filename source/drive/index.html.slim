@@ -12,10 +12,10 @@ section#trackmaps
   .container.content-section
     h3.text-center Trackmaps
     .row
-      - %w[barcelona brands-hatch donington hungaroring imola kyalami misano mount-panorama nuerburgring oulton-park paul-ricard silverstone snetterton].each do |track|
+      - %w[barcelona brands-hatch donington hungaroring kyalami misano mount-panorama nuerburgring oulton-park paul-ricard silverstone snetterton].each do |track|
         = link_to image_path("trackmaps/#{track}.png"), class: 'col-md-2 mb-3', 'data-lightbox' => "trackmaps" do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
-      - %w[laguna-seca monza spa suzuka zandvoort zolder].each do |track|
+      - %w[imola laguna-seca monza spa suzuka zandvoort zolder].each do |track|
         = link_to "##{track}", class: 'col-md-2 mb-3' do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
 
@@ -104,33 +104,8 @@ section#tracks
               | CDA reference:
               strong  1:43.1
 
-      .col-md-4
-        .card.mb-3
-          = link_to image_path("trackmaps/imola.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/imola.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Imola
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (1:42)
-                  td 59l
-                  td 117l
-                tr
-                  th Wet (2:00)
-                  td 46l
-                  td 91l
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:40.6
-            li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=2RKqCQT3DZI'
+      .col-md-12
+        = partial 'imola'
 
       .col-md-4
         .card.mb-3
@@ -159,8 +134,6 @@ section#tracks
               | CDA reference:
               strong  1:40.5
             li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=qpHUfb9JCcQ'
-
-
 
       .col-md-4
         .card.mb-3

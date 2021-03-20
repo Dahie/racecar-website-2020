@@ -1,0 +1,42 @@
+import React, { Component } from 'react'
+import LapTime from './LapTime'
+
+class DurationWithFuel extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      fuelLoad: 60.0,
+      extraLaps: 0
+    }
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({fuelLoad: event.target.value});
+  }
+
+  lapsAtFuelUsage() {
+    return Math.ceil(this.state.fuelLoad / this.props.fuelPerLap);
+  }
+
+  durationForLaps(laps) {
+    return laps * this.props.lapTime
+  }
+
+  render() {
+    return (
+      <div>
+        <h4>Consumption</h4>
+        <div>
+          <label>Fuel load in l:</label><br />
+          <input type="number" className="form-control" value={this.state.fuelLoad} step='1.0' onChange={this.handleChange} /></div>
+        <p>Laps: {this.lapsAtFuelUsage() }</p>
+        <p>
+          Time: <LapTime duration={this.durationForLaps( this.lapsAtFuelUsage() )} />
+        </p>
+      </div>
+    )
+  }
+}
+
+export default DurationWithFuel;

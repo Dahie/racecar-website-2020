@@ -24,6 +24,7 @@ Icon
 ._*
 
 build/
+node_modules/
 .tmp/
 
 # Files that might appear on external disk

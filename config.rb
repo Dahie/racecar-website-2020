@@ -16,6 +16,21 @@ activate :external_pipeline,
   source: '.tmp/dist',
   latency: 1
 
+dev_com = "./node_modules/webpack/bin/webpack.js --watch -d"
+prod_com = "./node_modules/webpack/bin/webpack.js --bail"
+
+activate :external_pipeline,
+  name: :webpack,
+  # using yarn command at `./node_modules/yarn/bin/yarn`
+  # because it won't be globally installed on build server
+  command: build? ?  prod_com : dev_com,
+  source: ".tmp/dist",
+  latency: 1
+
+configure :development do
+  activate :livereload
+end
+
 #activate :minify_css
 configure :build do
   # activate :favicon_maker do |f|
@@ -35,6 +50,10 @@ configure :build do
   #     ]
   #   }
   # end
+
+  ignore '/javascripts/components/*.js'
+  ignore '/javascripts/site.js'
+
 
   activate :asset_hash
   activate :gzip

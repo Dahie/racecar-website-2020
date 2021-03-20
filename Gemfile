@@ -5,6 +5,7 @@ gem 'middleman', github: 'middleman/middleman'
 gem 'middleman-minify-html'
 gem 'middleman-deploy', git: 'https://github.com/middleman-contrib/middleman-deploy', branch: 'master'
 gem 'middleman-dragonfly_thumbnailer'
+gem "middleman-livereload", "~> 3.4.6"
 gem 'slim'
 gem 'rake'
 gem 'webrick'

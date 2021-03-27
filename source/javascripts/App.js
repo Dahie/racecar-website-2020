@@ -24,7 +24,6 @@ class App extends Component {
     this.state = {
       lapTime: 126,
       fuelPerLap: 3.5,
-      lap: { value: 126},
       extraLaps: 0
     }
 
@@ -32,47 +31,48 @@ class App extends Component {
     this.changeLapTime = this.changeLapTime.bind(this);
   }
 
-  changeLapTime(selectedOption) {
-    this.setState({ lap: selectedOption });
+  changeLapTime(event) {
+    this.setState({lapTime: event.target.value});
   }
 
   handleChange(event) {
-    console.log(event.target.name)
     this.setState({fuelPerLap: event.target.value});
   }
 
   render() {
-    const { lap, lapTime, fuelPerLap } = this.state;
+    const { lapTime, fuelPerLap } = this.state;
     return (
-      <div className={`react-root container card`}>
-        <div className="row">
-          <div className="col">
-            <div className="form-group">
-              <label>Lap time:</label>
-              <Select
-                value={lap}
-                onChange={this.changeLapTime}
-                options={lapTimePresets}
-              />
+      <div className={`react-root card`}>
+        <div className="card-body">
+          <div className="row">
+            <div className="col">
+              <div className="form-group row">
+                <label className="col-sm-4 col-form-label">Lap time: <LapTime duration={lapTime} /></label>
+                <div className="col-sm-8">
+                  <input type="range" value={lapTime} onChange={this.changeLapTime} className="form-control-range" min="60" max="180" />
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="form-group row">
+                <label className="col-sm-4 col-form-label">Fuel use l per lap:</label>
+                <div className="col-sm-8">
+                  <input type="number" className="form-control" value={fuelPerLap} step='0.1' onChange={this.handleChange} />
+                </div>
+              </div>
             </div>
           </div>
-          <div className="col">
-            <div className="form-group">
-              <label>Fuel use per lap:</label><br />
-              <input type="number" className="form-control" value={fuelPerLap} step='0.1' onChange={this.handleChange} />
+          <div className="row">
+            <div className="col">
+              <FuelForDurations
+                lapTime={lapTime}
+                fuelPerLap={fuelPerLap} />
             </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <FuelForDurations
-              lapTime={lap.value}
-              fuelPerLap={fuelPerLap} />
-          </div>
-          <div className="col">
-            <DurationWithFuel
-              lapTime={lap.value}
-              fuelPerLap={fuelPerLap} />
+            <div className="col">
+              <DurationWithFuel
+                lapTime={lapTime}
+                fuelPerLap={fuelPerLap} />
+            </div>
           </div>
         </div>
       </div>

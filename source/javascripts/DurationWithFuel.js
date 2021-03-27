@@ -27,12 +27,14 @@ class DurationWithFuel extends Component {
     return (
       <div>
         <h4>Consumption</h4>
-        <div>
-          <label>Fuel load in l:</label><br />
-          <input type="number" className="form-control" value={this.state.fuelLoad} step='1.0' onChange={this.handleChange} /></div>
-        <p>Laps: {this.lapsAtFuelUsage() }</p>
+        <div className="form-group row">
+          <label className="col-sm-4 col-form-label">Fuel load in l:</label><br />
+          <div className="col-sm-8">
+            <input type="number" className="form-control" value={this.state.fuelLoad} step='1.0' onChange={this.handleChange} /></div>
+          </div>
+        <p>Remaining laps: {this.lapsAtFuelUsage() }</p>
         <p>
-          Time: <LapTime duration={this.durationForLaps( this.lapsAtFuelUsage() )} />
+          Remaining time: <LapTime duration={this.durationForLaps( this.lapsAtFuelUsage() )} />
         </p>
       </div>
     )

@@ -4,10 +4,10 @@ function FuelRaceResult(props) {
   return (<tr>
             <th>{props.duration} min</th>
             <td>
-              <strong>{props.fuel} l</strong>
+              {props.fuel} l
             </td>
             <td>
-              <span>{props.laps} laps</span>
+              {props.laps} laps
             </td>
           </tr>
   )

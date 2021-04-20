@@ -9,19 +9,41 @@ title: Drive support - RaceCar
         .col-md-8
           h1.brand-heading Drive
 
-section#trackmaps
+section#next-event
   .container.content-section
     h3.text-center Next event: 04/17/2021 - 4 Hours of Imola - GT3
     ul.list-group.list-group-flush
       li.list-group-item
         = link_to 'Imola', "#imola"
-      li.list-group-item Practice 1 - 15:00 UTC - 60 min (Race Weekend Day 1 - 4:00 PM) - not mandatory
-      li.list-group-item Practice 2 - 18:00 UTC - 180 min (Race Weekend Day 1 - 7:00 PM) - not mandatory
-      li.list-group-item Qualifying - 21:05 UTC - 30 min  (Race Weekend Day 2 - 4:00 PM)
-      li.list-group-item Race - 21:45 PM UTC - 240 min (Race Weekend Day 2 - 6:00PM)
       li.list-group-item Weather: Medium cloud cover and mild variability will leave low chance for light rain. Warm Temperatures.
+    table.table
+      thead
+        tr
+          th Session
+          th Beginn
+          th Duration
+      tbody
+        tr
+          td Practice 1 (optional)
+          td= "2021-04-17 12:00:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
+          td 60 min (Race Weekend Day 1 - 4:00 PM)
+        tr
+          td Practice 2 (optional)
+          td= "2021-04-17 13:00:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
+          td 180 min (Race Weekend Day 1 - 7:00 PM)
+        tr
+          td Qualifying
+          td= "2021-04-17 16:05:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
+          td 30 min (Race Weekend Day 2 - 4:00 PM)
+        tr
+          td Race
+          td= "2021-04-17 16:45:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
+          td 240 min (Race Weekend Day 2 - 6:00PM)
 
-section#trackmaps
+
+
+
+section#fuel
   .container.content-section
     h3.text-center Fuel calculation
     #root
@@ -30,10 +52,10 @@ section#trackmaps
   .container.content-section
     h3.text-center Trackmaps
     .row
-      - %w[barcelona brands-hatch donington hungaroring kyalami misano mount-panorama nuerburgring oulton-park paul-ricard silverstone snetterton].each do |track|
+      - %w[barcelona brands-hatch hungaroring kyalami misano mount-panorama nuerburgring oulton-park paul-ricard silverstone snetterton].each do |track|
         = link_to image_path("trackmaps/#{track}.png"), class: 'col-md-2 mb-3', 'data-lightbox' => "trackmaps" do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
-      - %w[imola laguna-seca monza spa suzuka zandvoort zolder].each do |track|
+      - %w[donington imola laguna-seca monza spa suzuka zandvoort zolder].each do |track|
         = link_to "##{track}", class: 'col-md-2 mb-3' do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
 
@@ -69,6 +91,7 @@ section#tracks
             li.list-group-item
               | CDA reference:
               strong  1:43.4
+            li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=PR12e9Qwpo4'
 
       .col-md-4
         .card.mb-3
@@ -96,6 +119,10 @@ section#tracks
             li.list-group-item
               | CDA reference:
               strong  1:22.5
+
+
+      .col-md-12
+        = partial 'donington'
 
       .col-md-4
         .card.mb-3
@@ -373,7 +400,7 @@ section#tracks
 
     | GT3 2019 - 27.5-28.0
     | GT3 2020 - 27.3-27.8
-    | https://www.youtube.com/watch?v=qAGAnnIfmRM&feature=youtu.be
+    |
 
 section#links
   .container.content-section
@@ -386,4 +413,6 @@ section#links
           li= link_to 'ACCWiki Car Setup & Pitstops', 'https://www.acc-wiki.info/wiki/Car_Setups_and_Pitstop', target: :blank
           li= link_to 'Fuel calculator', 'https://mythiq.net/fuelcalc/', target: :blank
           li= link_to 'FOV calculator', 'https://dinex86.github.io/FOV-Calculator/', target: :blank
+          li= link_to 'Setup Guide', 'https://felixdicit.com/assetto-corsa-setup-tips/', target: :blank
+          li= link_to 'Optimise Setups for Track conditions', 'https://www.youtube.com/watch?v=qAGAnnIfmRM&feature=youtu.be', target: :blank
           li= link_to 'Driver Swap Guide', 'https://docs.google.com/document/d/1S1tKDWT7bQnEQ2TtH9495vbz4Yt3WBUTY8ynQwlvCuA/edit'

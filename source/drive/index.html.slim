@@ -7,7 +7,16 @@ title: Drive support - RaceCar
     .container
       .row.justify-content-center
         .col-md-8
-          h1.brand-heading Drive
+          h1.brand-heading Drive guide
+
+section#trackmaps
+  .container.content-section
+    h3.text-center Quickjump
+    .row
+      - %w[barcelona brands-hatch donington hungaroring imola kyalami laguna-seca misano monza mount-panorama nuerburgring oulton-park paul-ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
+        = link_to "##{track}", class: 'col-md-2 mb-3' do
+          = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
+
 
 section#next-event
   .container.content-section
@@ -48,25 +57,12 @@ section#fuel
     h3.text-center Fuel calculation
     #root
 
-section#trackmaps
-  .container.content-section
-    h3.text-center Trackmaps
-    .row
-      - %w[barcelona brands-hatch hungaroring kyalami misano mount-panorama nuerburgring oulton-park paul-ricard silverstone snetterton].each do |track|
-        = link_to image_path("trackmaps/#{track}.png"), class: 'col-md-2 mb-3', 'data-lightbox' => "trackmaps" do
-          = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
-      - %w[donington imola laguna-seca monza spa suzuka zandvoort zolder].each do |track|
-        = link_to "##{track}", class: 'col-md-2 mb-3' do
-          = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
-
-
-
 section#tracks
   .container.content-section
     h3.text-center Track guides
     .row
       .col-md-4
-        .card.mb-3
+        #barcelona.card.mb-3
           = link_to image_path("trackmaps/barcelona.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/barcelona.png", '390x202#', class: 'img-fluid'
           .card-body
@@ -94,7 +90,7 @@ section#tracks
             li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=PR12e9Qwpo4'
 
       .col-md-4
-        .card.mb-3
+        #brands-hatch.card.mb-3
           = link_to image_path("trackmaps/brands-hatch.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/brands-hatch.png", '390x202#', class: 'img-fluid'
           .card-body
@@ -125,7 +121,7 @@ section#tracks
         = partial 'donington'
 
       .col-md-4
-        .card.mb-3
+        #hungaroring.card.mb-3
           = link_to image_path("trackmaps/hungaroring.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/hungaroring.png", '390x202#', class: 'img-fluid'
           .card-body
@@ -155,7 +151,7 @@ section#tracks
         = partial 'imola'
 
       .col-md-4
-        .card.mb-3
+        #kyalami.card.mb-3
           = link_to image_path("trackmaps/kyalami.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/kyalami.png", '390x202#', class: 'img-fluid'
           .card-body
@@ -183,7 +179,7 @@ section#tracks
             li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=qpHUfb9JCcQ'
 
       .col-md-4
-        .card.mb-3
+        #misano.card.mb-3
           = link_to image_path("trackmaps/misano.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/misano.png", '390x202#', class: 'img-fluid'
           .card-body
@@ -217,7 +213,7 @@ section#tracks
         = partial 'monza'
 
       .col-md-4
-        .card.mb-3
+        #mount-panorama.card.mb-3
           = link_to image_path("trackmaps/mount-panorama.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/mount-panorama.png", '390x202#', class: 'img-fluid'
           .card-body
@@ -248,7 +244,7 @@ section#tracks
             li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=OltueZoqYdw'
 
       .col-md-4
-        .card.mb-3
+        #nuerburgring.card.mb-3
           = link_to image_path("trackmaps/nuerburgring.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/nuerburgring.png", '390x202#', class: 'img-fluid'
           .card-body
@@ -275,7 +271,7 @@ section#tracks
               strong  1:53.7
 
       .col-md-4
-        .card.mb-3
+        #oulton-park.card.mb-3
           = link_to image_path("trackmaps/oulton-park.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/oulton-park.png", '390x202#', class: 'img-fluid'
           .card-body
@@ -302,7 +298,7 @@ section#tracks
               strong  -
 
       .col-md-4
-        .card.mb-3
+        #paul-ricard.card.mb-3
           = link_to image_path("trackmaps/paul-ricard.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/paul-ricard.png", '390x202#', class: 'img-fluid'
           .card-body
@@ -329,7 +325,7 @@ section#tracks
               strong  1:53.6
 
       .col-md-4
-        .card.mb-3
+        #silverstone.card.mb-3
           = link_to image_path("trackmaps/silverstone.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/silverstone.png", '390x202#', class: 'img-fluid'
           .card-body
@@ -356,7 +352,7 @@ section#tracks
               strong  1:56.8
 
       .col-md-4
-        .card.mb-3
+        #snetterton.card.mb-3
           = link_to image_path("trackmaps/snetterton.png"), 'data-lightbox' => "trackmaps" do
             = thumb_tag "trackmaps/snetterton.png", '390x202#', class: 'img-fluid'
           .card-body

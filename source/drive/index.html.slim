@@ -178,97 +178,20 @@ section#tracks
               strong  1:40.5
             li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=qpHUfb9JCcQ'
 
-      .col-md-4
-        #misano.card.mb-3
-          = link_to image_path("trackmaps/misano.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/misano.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Misano
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (-)
-                  td
-                  td
-                tr
-                  th Wet (-)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference: 1:33.4
-            li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=6Nf8lkz5mZ4'
+      .col-md-12
+        = partial 'misano'
 
       .col-md-12
         = partial 'laguna-seca'
 
-
       .col-md-12
         = partial 'monza'
 
-      .col-md-4
-        #mount-panorama.card.mb-3
-          = link_to image_path("trackmaps/mount-panorama.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/mount-panorama.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Mount Panorama
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (2:08)
-                  td
-                  td
-                tr
-                  th Wet (-)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:59.8
-            li.list-group-item
-              | Pitlane Delta:
-              strong  54s
-            li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=OltueZoqYdw'
+      .col-md-12
+        = partial 'mount-panorama'
 
-      .col-md-4
-        #nuerburgring.card.mb-3
-          = link_to image_path("trackmaps/nuerburgring.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/nuerburgring.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Nürburgring
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (1:46)
-                  td
-                  td
-                tr
-                  th Wet (2:06)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:53.7
+      .col-md-12
+        = partial 'nurburgring'
 
       .col-md-4
         #oulton-park.card.mb-3

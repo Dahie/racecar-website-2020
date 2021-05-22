@@ -26,7 +26,7 @@ class FuelForDuration extends Component {
     const durations = [5, 10, 15, 20, 25, 30, 60]
 
     return (
-      <div>
+      <>
         <h4>Requirement</h4>
         <table className="table">
           <thead>
@@ -46,7 +46,7 @@ class FuelForDuration extends Component {
             ))}
           </tbody>
         </table>
-      </div>
+      </>
     )
   }
 }

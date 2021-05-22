@@ -25,7 +25,7 @@ class DurationWithFuel extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <h4>Consumption</h4>
         <div className="form-group row">
           <label className="col-sm-4 col-form-label">Fuel load in l:</label><br />
@@ -36,7 +36,7 @@ class DurationWithFuel extends Component {
         <p>
           Remaining time: <LapTime duration={this.durationForLaps( this.lapsAtFuelUsage() )} />
         </p>
-      </div>
+      </>
     )
   }
 }

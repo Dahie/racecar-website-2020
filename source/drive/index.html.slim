@@ -13,7 +13,7 @@ section#trackmaps
   .container.content-section
     h3.text-center Quickjump
     .row
-      - %w[barcelona brands-hatch donington hungaroring imola kyalami laguna-seca misano monza mount-panorama nuerburgring oulton-park paul-ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
+      - %w[barcelona brands-hatch donington hungaroring imola kyalami laguna-seca misano monza mount-panorama nuerburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
         = link_to "##{track}", class: 'col-md-2 mb-3' do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
 
@@ -120,32 +120,8 @@ section#tracks
       .col-md-12
         = partial 'donington'
 
-      .col-md-4
-        #hungaroring.card.mb-3
-          = link_to image_path("trackmaps/hungaroring.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/hungaroring.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Hungaroring
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (-)
-                  td
-                  td
-                tr
-                  th Wet (-)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:43.1
+      .col-md-12
+        = partial 'hungaroring'
 
       .col-md-12
         = partial 'imola'
@@ -194,58 +170,10 @@ section#tracks
         = partial 'nurburgring'
 
       .col-md-4
-        #oulton-park.card.mb-3
-          = link_to image_path("trackmaps/oulton-park.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/oulton-park.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Oulton Park
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (-)
-                  td
-                  td
-                tr
-                  th Wet (-)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  -
+        = partial 'oulton_park'
 
-      .col-md-4
-        #paul-ricard.card.mb-3
-          = link_to image_path("trackmaps/paul-ricard.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/paul-ricard.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Paul Ricard
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (1:46)
-                  td
-                  td
-                tr
-                  th Wet (2:06)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:53.6
+      .col-md-12
+        = partial 'paul_ricard'
 
       .col-md-4
         #silverstone.card.mb-3

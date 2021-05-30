@@ -45,7 +45,7 @@ class FuelCalculator extends Component {
       <div className="card">
         <div className="card-body">
           <div className="row">
-            <div className="col">
+            <div className="col-md-6">
               <div className="form-group row">
                 <label className="col-sm-4 col-form-label">Lap time: <LapTime duration={lapTime} /></label>
                 <div className="col-sm-8">
@@ -53,7 +53,7 @@ class FuelCalculator extends Component {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-md-6">
               <div className="form-group row">
                 <label className="col-sm-4 col-form-label">Fuel use l per lap:</label>
                 <div className="col-sm-8">
@@ -63,12 +63,12 @@ class FuelCalculator extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col">
+            <div className="col-md-6">
               <FuelForDurations
                 lapTime={lapTime}
                 fuelPerLap={fuelPerLap} />
             </div>
-            <div className="col">
+            <div className="col-md-6">
               <DurationWithFuel
                 lapTime={lapTime}
                 fuelPerLap={fuelPerLap} />

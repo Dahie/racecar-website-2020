@@ -4,7 +4,7 @@ import FuelCalculator from './FuelCalculator'
 function App() {
   return (
 <div className={`react-root`}>
-      <FuelCalculator />
+  <FuelCalculator />
 </div>
   )
 }

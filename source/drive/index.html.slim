@@ -13,17 +13,16 @@ section#trackmaps
   .container.content-section
     h3.text-center Quickjump
     .row
-      - %w[barcelona brands-hatch donington hungaroring imola kyalami laguna-seca misano monza mount-panorama nuerburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
-        = link_to "##{track}", class: 'col-md-2 mb-3' do
+      - %w[barcelona brands-hatch donington hungaroring imola kyalami laguna-seca misano monza mount-panorama nurburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
+        = link_to "##{track}", class: 'col-sm-3 mb-3' do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
-
 
 section#next-event
   .container.content-section
-    h3.text-center Next event: 04/17/2021 - 4 Hours of Imola - GT3
+    h3.text-center Next event: 2021/07/17 - 4 Hours of Mount Panorama - GT3
     ul.list-group.list-group-flush
       li.list-group-item
-        = link_to 'Imola', "#imola"
+        = link_to 'Mount Panorama', "#mount_panorama"
       li.list-group-item Weather: Medium cloud cover and mild variability will leave low chance for light rain. Warm Temperatures.
     table.table
       thead
@@ -38,15 +37,15 @@ section#next-event
           td 60 min (Race Weekend Day 1 - 4:00 PM)
         tr
           td Practice 2 (optional)
-          td= "2021-04-17 13:00:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
-          td 180 min (Race Weekend Day 1 - 7:00 PM)
+          td= "2021-04-17 12:00:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
+          td 30 min (Race Weekend Day 1 - 7:00 PM)
         tr
           td Qualifying
-          td= "2021-04-17 16:05:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
-          td 30 min (Race Weekend Day 2 - 4:00 PM)
+          td= "2021-04-17 14:30:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
+          td 20 min (Race Weekend Day 2 - 4:00 PM)
         tr
           td Race
-          td= "2021-04-17 16:45:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
+          td= "2021-04-17 15:00:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
           td 240 min (Race Weekend Day 2 - 6:00PM)
 
 
@@ -169,7 +168,7 @@ section#tracks
       .col-md-12
         = partial 'nurburgring'
 
-      .col-md-4
+      .col-md-12
         = partial 'oulton_park'
 
       .col-md-12
@@ -232,8 +231,8 @@ section#tracks
               | Pitlane Delta:
               strong  37
 
-      .col-md-12
-        = partial 'spa'
+
+      = partial 'spa'
 
       .col-md-12
         = partial 'suzuka'

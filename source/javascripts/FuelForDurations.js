@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import RaceFuelResult from './RaceFuelResult'
 
 class FuelForDuration extends Component {

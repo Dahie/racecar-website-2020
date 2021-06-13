@@ -18,7 +18,7 @@ function LapTime(props) {
   }
 
   return (
-    <span>{msToTime(props.duration*1000)}</span>
+    <lap-time>{msToTime(props.duration*1000)}</lap-time>
   )
 }
 

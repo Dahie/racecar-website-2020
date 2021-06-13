@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+
+import Select from 'react-select';
+
 import DurationWithFuel from './DurationWithFuel'
 import FuelForDurations from './FuelForDurations'
 import LapTime from './LapTime'
-import Select from 'react-select';
 
 let lapTimePresets = [];
 for(let time = 60000; time < 200000; time += 1000) {

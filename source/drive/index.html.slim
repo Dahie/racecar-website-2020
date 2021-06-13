@@ -13,7 +13,7 @@ section#trackmaps
   .container.content-section
     h3.text-center Quickjump
     .row
-      - %w[barcelona brands-hatch donington hungaroring imola kyalami laguna-seca misano monza mount-panorama nurburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
+      - %w[barcelona brands_hatch donington hungaroring imola kyalami laguna-seca misano monza mount-panorama nurburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
         = link_to "##{track}", class: 'col-sm-3 mb-3' do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
 
@@ -49,73 +49,12 @@ section#next-event
           td 240 min (Race Weekend Day 2 - 6:00PM)
 
 
-
-
-section#fuel
-  .container.content-section
-    h3.text-center Fuel calculation
-    #root
+#root
 
 section#tracks
   .container.content-section
     h3.text-center Track guides
     .row
-      .col-md-4
-        #barcelona.card.mb-3
-          = link_to image_path("trackmaps/barcelona.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/barcelona.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Barcelona
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (-)
-                  td
-                  td
-                tr
-                  th Wet (-)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:43.4
-            li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=PR12e9Qwpo4'
-
-      .col-md-4
-        #brands-hatch.card.mb-3
-          = link_to image_path("trackmaps/brands-hatch.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/brands-hatch.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Brands-Hatch
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (-)
-                  td
-                  td
-                tr
-                  th Wet (-)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:22.5
-
-
       .col-md-12
         = partial 'donington'
 
@@ -124,34 +63,6 @@ section#tracks
 
       .col-md-12
         = partial 'imola'
-
-      .col-md-4
-        #kyalami.card.mb-3
-          = link_to image_path("trackmaps/kyalami.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/kyalami.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Kyalami
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (-)
-                  td
-                  td
-                tr
-                  th Wet (-)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:40.5
-            li.list-group-item = link_to 'Watch Coaching with Gregor Schill', 'https://www.youtube.com/watch?v=qpHUfb9JCcQ'
 
       .col-md-12
         = partial 'misano'
@@ -174,32 +85,6 @@ section#tracks
       .col-md-12
         = partial 'paul_ricard'
 
-      .col-md-4
-        #silverstone.card.mb-3
-          = link_to image_path("trackmaps/silverstone.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/silverstone.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Silverstone
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (1:46)
-                  td
-                  td
-                tr
-                  th Wet (2:06)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  1:56.8
 
       .col-md-4
         #snetterton.card.mb-3
@@ -230,19 +115,6 @@ section#tracks
             li.list-group-item
               | Pitlane Delta:
               strong  37
-
-
-      = partial 'spa'
-
-      .col-md-12
-        = partial 'suzuka'
-
-      .col-md-12
-        = partial 'zandvoort'
-
-      .col-md-12
-        = partial 'zolder'
-
 
     | GT3 2019 - 27.5-28.0
     | GT3 2020 - 27.3-27.8

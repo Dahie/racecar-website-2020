@@ -19,7 +19,7 @@ module.exports = {
       __dirname + '/assets/css',
       __dirname + '/node_modules',
     ],
-    extensions: ['.js', '.css', '.scss']
+    extensions: ['.js', '.json', '.css', '.scss']
   },
   module: {
     rules: [

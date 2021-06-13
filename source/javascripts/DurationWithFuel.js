@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import LapTime from './LapTime'
 
 class DurationWithFuel extends Component {

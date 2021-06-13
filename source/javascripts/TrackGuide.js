@@ -8,9 +8,7 @@ class TrackGuide extends Component {
     return (
       <track-list className='row'>
         {Tracks.map(track => (
-          <div className="col-md-12">
-            <Track key={track.reference} {...track} />
-          </div>
+          <Track key={track.reference} {...track} />
         ))}
       </track-list>
     )

@@ -13,7 +13,7 @@ section#trackmaps
   .container.content-section
     h3.text-center Quickjump
     .row
-      - %w[barcelona brands_hatch donington hungaroring imola kyalami laguna-seca misano monza mount-panorama nurburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
+      - %w[barcelona brands_hatch donington hungaroring imola kyalami laguna_seca misano monza mount_panorama nurburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
         = link_to "##{track}", class: 'col-sm-3 mb-3' do
           = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
 
@@ -51,74 +51,6 @@ section#next-event
 
 #root
 
-section#tracks
-  .container.content-section
-    h3.text-center Track guides
-    .row
-      .col-md-12
-        = partial 'donington'
-
-      .col-md-12
-        = partial 'hungaroring'
-
-      .col-md-12
-        = partial 'imola'
-
-      .col-md-12
-        = partial 'misano'
-
-      .col-md-12
-        = partial 'laguna-seca'
-
-      .col-md-12
-        = partial 'monza'
-
-      .col-md-12
-        = partial 'mount-panorama'
-
-      .col-md-12
-        = partial 'nurburgring'
-
-      .col-md-12
-        = partial 'oulton_park'
-
-      .col-md-12
-        = partial 'paul_ricard'
-
-
-      .col-md-4
-        #snetterton.card.mb-3
-          = link_to image_path("trackmaps/snetterton.png"), 'data-lightbox' => "trackmaps" do
-            = thumb_tag "trackmaps/snetterton.png", '390x202#', class: 'img-fluid'
-          .card-body
-            h5.card-title Snetterton
-            p.card-text Settings for Mercedes-AMG GT3 (2015)
-            table.table
-              thead
-                tr
-                  th
-                  th 30min
-                  th 60min
-              tbody
-                tr
-                  th Dry (1:52)
-                  td
-                  td
-                tr
-                  th Wet (2:06)
-                  td
-                  td
-          ul.list-group.list-group-flush
-            li.list-group-item
-              | CDA reference:
-              strong  -
-            li.list-group-item
-              | Pitlane Delta:
-              strong  37
-
-    | GT3 2019 - 27.5-28.0
-    | GT3 2020 - 27.3-27.8
-    |
 
 section#links
   .container.content-section

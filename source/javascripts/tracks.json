@@ -18,6 +18,7 @@
         "cars": [
           {
             "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
             "lap_time": 86,
             "fuel_map": {
               "1": 2.36
@@ -52,6 +53,7 @@
         "cars": [
           {
             "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
             "lap_time": 108,
             "fuel_map": {
               "1": 3.0
@@ -60,6 +62,101 @@
               "31": [26.0, 27.5, 26.1, 27.1],
               "34": [25.6, 27.1, 26.3, 27.1],
               "39": [25.1, 26.8, 25.7, 26.5]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "reference": "donington",
+    "name": "Donington",
+    "links": [
+
+    ],
+    "reference_lap_times": [
+    ],
+    "pitlane_delta": "?",
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "McLaren 720S",
+            "source": "ACC Aggressive",
+            "lap_time": 92,
+            "fuel_map": {
+              "1": 2.6
+            },
+            "tire_pressures": {
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "reference": "hungaroring",
+    "name": "Hungaroring",
+    "links": [
+
+    ],
+    "reference_lap_times": [
+      { "category": "CDA", "lap_time": "1:43.1" },
+      { "category": "PRO", "lap_time": "<1:44.5" },
+      { "category": "SILVER", "lap_time": "1:44.5 - 1:45.9" },
+      { "category": "AM", "lap_time": "1:46.5 - 1:47.4" },
+      { "category": "ROOKIE", "lap_time": ">1:47.5" }
+    ],
+    "pitlane_delta": "?",
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
+            "lap_time": 116,
+            "fuel_map": {
+              "1": 2.85
+            },
+            "tire_pressures": {
+              "39": [25.5, 26.3, 25.7, 26.3]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "reference": "imola",
+    "name": "Imola",
+    "links": [
+      { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=2RKqCQT3DZI" }
+    ],
+    "reference_lap_times": [
+      { "category": "CDA", "lap_time": "1:40.6" }
+    ],
+    "pitlane_delta": 58,
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
+            "lap_time": 104,
+            "fuel_map": {
+              "1": 3.25,
+              "2": 2.6
+            },
+            "tire_pressures": {
+              "16": [27.6, 27.2, 27.5, 27.2],
+              "31": [26.9, 26.7, 26.9, 26.7],
+              "39": [26.2, 25.6, 26.2, 25.9]
             }
           }
         ]
@@ -87,6 +184,7 @@
         "cars": [
           {
             "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
             "lap_time": 105,
             "fuel_map": {
               "1": 3.1,
@@ -101,6 +199,267 @@
       }
     ]
   },
+
+  {
+    "reference": "laguna_seca",
+    "name": "Laguna Seca",
+    "links": [
+      { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=2RKqCQT3DZI" }
+    ],
+    "reference_lap_times": [
+      { "category": "CDA", "lap_time": "1:21.9" },
+      { "category": "PRO", "lap_time": "<1:23.5" },
+      { "category": "SILVER", "lap_time": "1:23.5 - 1:24.9" },
+      { "category": "AM", "lap_time": "1:24.5 - 1:26.4" },
+      { "category": "ROOKIE", "lap_time": ">1:26.5" }
+    ],
+    "pitlane_delta": "?",
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
+            "lap_time": 86,
+            "fuel_map": {
+              "1": 2.2
+            },
+            "tire_pressures": {
+              "31": [27.1, 26.3, 27.0, 26.7],
+              "39": [25.7, 25.2, 26.0, 25.5]
+            }
+          }
+        ]
+      },
+      {
+        "driver_id": "FRE",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "lap_time": 86,
+            "fuel_map": {
+              "1": 2.3
+            },
+            "tire_pressures": {
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "reference": "misano",
+    "name": "Misano",
+    "links": [
+      { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=6Nf8lkz5mZ4" }
+    ],
+    "reference_lap_times": [
+      { "category": "CDA", "lap_time": "1:33.4" },
+      { "category": "PRO", "lap_time": "<1:34.5" },
+      { "category": "SILVER", "lap_time": "1:34.5 - 1:35.9" },
+      { "category": "AM", "lap_time": "1:36.0 - 1:37.5" },
+      { "category": "ROOKIE", "lap_time": ">1:35.5" }
+    ],
+    "pitlane_delta": "?",
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
+            "lap_time": 97,
+            "fuel_map": {
+              "1": 2.6
+            },
+            "tire_pressures": {
+              "27": [26.2, 26.8, 26.4, 27.0],
+              "39": [25.1, 26.3, 25.5, 26.3]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "reference": "monza",
+    "name": "Monza",
+    "links": [
+      { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=9llv5CAy9-0" }
+    ],
+    "reference_lap_times": [
+      { "category": "CDA", "lap_time": "1:47.2" },
+      { "category": "PRO", "lap_time": "<1:48.5" },
+      { "category": "SILVER", "lap_time": "1:48.5 - 1:49.9" },
+      { "category": "AM", "lap_time": "1:50.0 - 1:51.9" },
+      { "category": "ROOKIE", "lap_time": ">1:52.0" }
+    ],
+    "pitlane_delta": 55,
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
+            "lap_time": 111,
+            "fuel_map": {
+              "1": 3.7
+            },
+            "tire_pressures": {
+              "16": [26.4, 27.5, 26.8, 27.5],
+              "31": [25.7, 26.9, 25.7, 26.9],
+              "39": [25.2, 26.3, 25.8, 26.3]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "reference": "mount_panorama",
+    "name": "Mount Panorama",
+    "links": [
+      { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=OltueZoqYdw" }
+    ],
+    "reference_lap_times": [
+      { "category": "CDA", "lap_time": "1:59.8" },
+      { "category": "PRO", "lap_time": "<2:02.5" },
+      { "category": "SILVER", "lap_time": "2:02.5 - 2:03.9" },
+      { "category": "AM", "lap_time": "2:04.0 - 2:05.9" },
+      { "category": "ROOKIE", "lap_time": ">2:06.0" }
+    ],
+    "pitlane_delta": 54,
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
+            "lap_time": 128,
+            "fuel_map": {
+              "1": 3.2
+            },
+            "tire_pressures": {
+              "29": [26.8, 25.8, 26.9, 26.3],
+              "39": [25.9, 25.5, 26.4, 26.0]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "reference": "nurburgring",
+    "name": "Nürburgring",
+    "links": [
+      { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=OltueZoqYdw" }
+    ],
+    "reference_lap_times": [
+      { "category": "CDA", "lap_time": "1:53.7" },
+      { "category": "PRO", "lap_time": "<1:55.0" },
+      { "category": "SILVER", "lap_time": "1:55.0 - 1:56.4" },
+      { "category": "AM", "lap_time": "1:56.5 - 1:57.9" },
+      { "category": "ROOKIE", "lap_time": ">1:58.0" }
+    ],
+    "pitlane_delta": 54,
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
+            "lap_time": 118,
+            "fuel_map": {
+              "1": 3.2
+            },
+            "tire_pressures": {
+              "31": [26.3, 26.8, 26.8, 26.8],
+              "39": [25.6, 26.9, 25.9, 26.1]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "reference": "oulton_park",
+    "name": "Oulton Park",
+    "links": [
+
+    ],
+    "reference_lap_times": [
+      { "category": "CDA", "lap_time": "1:53.6" },
+      { "category": "PRO", "lap_time": "<1:55.0" },
+      { "category": "SILVER", "lap_time": "1:55.0 - 1:56.4" },
+      { "category": "AM", "lap_time": "1:56.5 - 1:58.4" },
+      { "category": "ROOKIE", "lap_time": ">1:58.5" }
+    ],
+    "pitlane_delta": "?",
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "source": "ACC Aggressive",
+            "lap_time": 106,
+            "fuel_map": {
+            },
+            "tire_pressures": {
+              "39": [25.5, 26.3, 25.7, 26.3]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "reference": "paul_ricard",
+    "name": "Paul Ricard",
+    "links": [
+
+    ],
+    "reference_lap_times": [
+      { "category": "CDA", "lap_time": "1:53.6" },
+      { "category": "PRO", "lap_time": "<1:55.0" },
+      { "category": "SILVER", "lap_time": "1:55.0 - 1:56.4" },
+      { "category": "AM", "lap_time": "1:56.5 - 1:58.4" },
+      { "category": "ROOKIE", "lap_time": ">1:58.5" }
+    ],
+    "pitlane_delta": 54,
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
+            "lap_time": 117,
+            "fuel_map": {
+              "1": 3.5,
+              "2": 2.9,
+              "3": 1.9
+            },
+            "tire_pressures": {
+              "19": [27.2, 27.8, 27.3, 27.8],
+              "39": [25.5, 26.3, 25.7, 26.3]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
   {
     "reference": "silverstone",
     "name": "Silverstone",
@@ -120,6 +479,7 @@
         "cars": [
           {
             "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
             "lap_time": "",
             "fuel_map": {
               "1": 3.6
@@ -133,6 +493,32 @@
       }
     ]
   },
+
+  {
+    "reference": "snetterton",
+    "name": "Snetterton",
+    "links": [],
+    "reference_lap_times": [],
+    "pitlane_delta": 37,
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
+            "lap_time": 92,
+            "fuel_map": {
+              "1": 2.6
+            },
+            "tire_pressures": {
+            }
+          }
+        ]
+      }
+    ]
+  },
+
   {
     "reference": "spa",
     "name": "Spa-Francorchamps",
@@ -154,6 +540,7 @@
         "cars": [
           {
             "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
             "lap_time": 142,
             "fuel_map": {
               "1": 4.5,
@@ -173,6 +560,7 @@
         "cars": [
           {
             "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
             "lap_time": "140",
             "fuel_map": {
               "1": 4.5,
@@ -201,6 +589,7 @@
         "cars": [
           {
             "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
             "lap_time": 127,
             "fuel_map": {
               "1": 3.5,
@@ -235,6 +624,7 @@
         "cars": [
           {
             "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
             "lap_time": "na",
             "fuel_map": {
               "1": 2.45
@@ -268,6 +658,7 @@
         "cars": [
           {
             "name": "Mercedes AMG GT3 (2015)",
+            "source": "CDA (Race)",
             "lap_time": 90,
             "fuel_map": {
               "1": 2.6

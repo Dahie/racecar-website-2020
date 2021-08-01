@@ -2,6 +2,7 @@
   {
     "reference": "brands_hatch",
     "name": "Brands-Hatch",
+    "track_map": "<%= image_path('track_maps/brands_hatch.png') %>",
     "links": [
     ],
     "reference_lap_times": [
@@ -27,6 +28,17 @@
               "31": [26.0, 27.5, 26.1, 27.1],
               "39": [25.1, 26.8, 25.7, 26.5]
             }
+          },
+          {
+            "name": "Lamborghini Hurrican ST",
+            "source": "ACC Aggressive",
+            "lap_time": 89,
+            "fuel_map": {
+              "1": 2.1
+            },
+            "tire_pressures": {
+              "26": [27.4, 28.4, 26.0, 26.9]
+            }
           }
         ]
       }
@@ -36,6 +48,7 @@
   {
     "reference": "barcelona",
     "name": "Barcelona",
+    "track_map": "<%= image_path('track_maps/barcelona.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=PR12e9Qwpo4" }
     ],
@@ -56,10 +69,11 @@
             "source": "CDA (Race)",
             "lap_time": 108,
             "fuel_map": {
-              "1": 3.0
+              "1": 3.1
             },
             "tire_pressures": {
-              "31": [26.0, 27.5, 26.1, 27.1],
+              "25": [25.9, 27.4, 26.6, 27.3],
+              "31": [25.9, 27.4, 26.6, 27.3],
               "34": [25.6, 27.1, 26.3, 27.1],
               "39": [25.1, 26.8, 25.7, 26.5]
             }
@@ -72,6 +86,7 @@
   {
     "reference": "donington",
     "name": "Donington",
+    "track_map": "<%= image_path('track_maps/donington.png') %>",
     "links": [
 
     ],
@@ -100,6 +115,7 @@
   {
     "reference": "hungaroring",
     "name": "Hungaroring",
+    "track_map": "<%= image_path('track_maps/hungaroring.png') %>",
     "links": [
 
     ],
@@ -121,8 +137,11 @@
             "lap_time": 116,
             "fuel_map": {
               "1": 2.85
+              "2": 2.35
+              "3": 2.35
             },
             "tire_pressures": {
+              "31": [26.2, 27.0, 26.5, 26.9],
               "39": [25.5, 26.3, 25.7, 26.3]
             }
           }
@@ -134,6 +153,7 @@
   {
     "reference": "imola",
     "name": "Imola",
+    "track_map": "<%= image_path('track_maps/imola.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=2RKqCQT3DZI" }
     ],
@@ -155,7 +175,7 @@
             },
             "tire_pressures": {
               "16": [27.6, 27.2, 27.5, 27.2],
-              "31": [26.9, 26.7, 26.9, 26.7],
+              "31": [26.8, 26.6, 26.7, 26.7],
               "39": [26.2, 25.6, 26.2, 25.9]
             }
           }
@@ -167,6 +187,7 @@
   {
     "reference": "kyalami",
     "name": "Kyalami",
+    "track_map": "<%= image_path('track_maps/kyalami.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=qpHUfb9JCcQ" }
     ],
@@ -187,12 +208,12 @@
             "source": "CDA (Race)",
             "lap_time": 105,
             "fuel_map": {
-              "1": 3.1,
+              "1": 3.2,
               "2": 2.45
             },
             "tire_pressures": {
               "16": [27.4, 27.1, 27.6, 27.9],
-              "39": [25.8, 25.8, 26.3, 26.2]
+              "39": [25.8, 25.8, 26.5, 26.4]
             }
           }
         ]
@@ -203,6 +224,7 @@
   {
     "reference": "laguna_seca",
     "name": "Laguna Seca",
+    "track_map": "<%= image_path('track_maps/laguna_seca.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=2RKqCQT3DZI" }
     ],
@@ -252,6 +274,7 @@
   {
     "reference": "misano",
     "name": "Misano",
+    "track_map": "<%= image_path('track_maps/misano.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=6Nf8lkz5mZ4" }
     ],
@@ -287,6 +310,7 @@
   {
     "reference": "monza",
     "name": "Monza",
+    "track_map": "<%= image_path('track_maps/monza.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=9llv5CAy9-0" }
     ],
@@ -323,6 +347,7 @@
   {
     "reference": "mount_panorama",
     "name": "Mount Panorama",
+    "track_map": "<%= image_path('track_maps/mount_panorama.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=OltueZoqYdw" }
     ],
@@ -341,9 +366,9 @@
           {
             "name": "Mercedes AMG GT3 (2015)",
             "source": "CDA (Race)",
-            "lap_time": 128,
+            "lap_time": 126,
             "fuel_map": {
-              "1": 3.2
+              "1": 4.2
             },
             "tire_pressures": {
               "29": [26.8, 25.8, 26.9, 26.3],
@@ -358,6 +383,7 @@
   {
     "reference": "nurburgring",
     "name": "Nürburgring",
+    "track_map": "<%= image_path('track_maps/nurburgring.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=OltueZoqYdw" }
     ],
@@ -393,6 +419,7 @@
   {
     "reference": "oulton_park",
     "name": "Oulton Park",
+    "track_map": "<%= image_path('track_maps/oulton_park.png') %>",
     "links": [
 
     ],
@@ -426,6 +453,7 @@
   {
     "reference": "paul_ricard",
     "name": "Paul Ricard",
+    "track_map": "<%= image_path('track_maps/paul_ricard.png') %>",
     "links": [
 
     ],
@@ -463,6 +491,7 @@
   {
     "reference": "silverstone",
     "name": "Silverstone",
+    "track_map": "<%= image_path('track_maps/silverstone.png') %>",
     "links": [
     ],
     "reference_lap_times": [
@@ -497,6 +526,7 @@
   {
     "reference": "snetterton",
     "name": "Snetterton",
+    "track_map": "<%= image_path('track_maps/snetterton.png') %>",
     "links": [],
     "reference_lap_times": [],
     "pitlane_delta": 37,
@@ -522,6 +552,7 @@
   {
     "reference": "spa",
     "name": "Spa-Francorchamps",
+    "track_map": "<%= image_path('track_maps/spa.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill pt1", "url": "https://www.youtube.com/watch?v=DYf8_CALX8g" },
       { "title": "Watch Coaching with Gregor Schill pt2", "url": "https://youtu.be/MEMXfgttHVE?t=926" }
@@ -574,6 +605,7 @@
   {
     "reference": "suzuka",
     "name": "Suzuka",
+    "track_map": "<%= image_path('track_maps/suzuka.png') %>",
     "links": [],
     "reference_lap_times": [
       { "category": "CDA", "lap_time": "1:59.8" },
@@ -607,6 +639,7 @@
   {
     "reference": "zandvoort",
     "name": "Zandvoort",
+    "track_map": "<%= image_path('track_maps/zandvoort.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=bU0tUXPB7Rw" }
     ],
@@ -641,6 +674,7 @@
   {
     "reference": "zolder",
     "name": "Zolder",
+    "track_map": "<%= image_path('track_maps/zolder.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=-7QCDSVaGjo" }
     ],
@@ -661,12 +695,13 @@
             "source": "CDA (Race)",
             "lap_time": 90,
             "fuel_map": {
-              "1": 2.6
+              "1": 2.7,
+              "2": 2.15
             },
             "tire_pressures": {
               "16": [26.8, 27.9, 27.2, 26.8],
               "31": [26.3, 26.9, 26.4, 26.8],
-              "39": []
+              "39": [25.3, 26.3, 25.8, 26.5]
             }
           }
         ]

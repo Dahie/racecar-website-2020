@@ -15,7 +15,7 @@ section#trackmaps
     .row
       - %w[barcelona brands_hatch donington hungaroring imola kyalami laguna_seca misano monza mount_panorama nurburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
         = link_to "##{track}", class: 'col-sm-3 mb-3' do
-          = thumb_tag "trackmaps/#{track}.png", '390x202#', class: 'img-fluid'
+          = thumb_tag "track_maps/#{track}.png", '390x202#', class: 'img-fluid'
 
 section#next-event
   .container.content-section
@@ -65,4 +65,5 @@ section#links
           li= link_to 'FOV calculator', 'https://dinex86.github.io/FOV-Calculator/', target: :blank
           li= link_to 'Setup Guide', 'https://felixdicit.com/assetto-corsa-setup-tips/', target: :blank
           li= link_to 'Optimise Setups for Track conditions', 'https://www.youtube.com/watch?v=qAGAnnIfmRM&feature=youtu.be', target: :blank
+          li= link_to 'Race Checklist', 'https://docs.google.com/document/d/19X7EgRuPaliGmQan_pCvpDCvoipyPkF3nlC0FITmsg8/edit#'
           li= link_to 'Driver Swap Guide', 'https://docs.google.com/document/d/1S1tKDWT7bQnEQ2TtH9495vbz4Yt3WBUTY8ynQwlvCuA/edit'

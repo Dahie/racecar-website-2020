@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Track from './Track'
-import Tracks from "./tracks.json";
+import Tracks from './tracks.json';
 
 class TrackGuide extends Component {
   render() {

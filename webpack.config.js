@@ -16,6 +16,7 @@ module.exports = {
   resolve: {
     modules: [
       __dirname + '/assets/javascript',
+      __dirname + '/assets/images',
       __dirname + '/assets/css',
       __dirname + '/node_modules',
     ],
@@ -23,6 +24,20 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(woff|woff2|eot|ttf|svg|ico|jpg|jpeg|png)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: "[path][name]-[hash].[ext]",
+              limit: 50000,
+              esModule: false, // <- here
+              publicPath: ''
+            }
+          }
+        ]
+      },
       {
         test: /\.scss$/,
         use: [

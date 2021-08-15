@@ -10,28 +10,21 @@ set :js_dir,     'assets/javascripts'
 
 activate :dragonfly_thumbnailer
 
-activate :external_pipeline,
-  name: :webpack,
-  command: build? ? 'yarn run build' : 'yarn run start',
-  source: '.tmp/dist',
-  latency: 1
-
-dev_com = "./node_modules/webpack/bin/webpack.js --watch -d"
-prod_com = "./node_modules/webpack/bin/webpack.js --bail"
+dev_com = './node_modules/webpack/bin/webpack.js --watch -d --progress --color'
+prod_com = './node_modules/webpack/bin/webpack.js --bail -p'
 
 activate :external_pipeline,
   name: :webpack,
   # using yarn command at `./node_modules/yarn/bin/yarn`
   # because it won't be globally installed on build server
-  command: build? ?  prod_com : dev_com,
-  source: ".tmp/dist",
+  command: build? ? prod_com : dev_com,
+  source: '.tmp/dist',
   latency: 1
 
 configure :development do
   activate :livereload
 end
 
-#activate :minify_css
 configure :build do
   # activate :favicon_maker do |f|
   #   f.template_dir  = File.join(root, 'source/assets/images/logos/')
@@ -54,10 +47,8 @@ configure :build do
   ignore '/javascripts/components/*.js'
   ignore '/javascripts/site.js'
 
-
   activate :asset_hash
   activate :gzip
-  #activate :minify_css
   activate :minify_html, remove_input_attributes: false
 
   set :relative_links, true

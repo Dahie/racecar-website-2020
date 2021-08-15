@@ -2,7 +2,7 @@ import React from 'react'
 
 function EngineMaps(props) {
   return (
-    <table class="table table-bordered table-sm">
+    <table className="table table-bordered table-sm">
       <tbody>
       {props.maps && Object.entries(props.maps).map(k => (
           <tr key={k[0]}>

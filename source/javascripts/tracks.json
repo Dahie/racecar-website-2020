@@ -2,7 +2,6 @@
   {
     "reference": "brands_hatch",
     "name": "Brands-Hatch",
-    "track_map": "<%= image_path('track_maps/brands_hatch.png') %>",
     "links": [
     ],
     "reference_lap_times": [
@@ -48,7 +47,6 @@
   {
     "reference": "barcelona",
     "name": "Barcelona",
-    "track_map": "<%= image_path('track_maps/barcelona.png') %>",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=PR12e9Qwpo4" }
     ],
@@ -86,7 +84,6 @@
   {
     "reference": "donington",
     "name": "Donington",
-    "track_map": "<%= image_path('track_maps/donington.png') %>",
     "links": [
 
     ],
@@ -115,7 +112,6 @@
   {
     "reference": "hungaroring",
     "name": "Hungaroring",
-    "track_map": "<%= image_path('track_maps/hungaroring.png') %>",
     "links": [
 
     ],
@@ -126,7 +122,7 @@
       { "category": "AM", "lap_time": "1:46.5 - 1:47.4" },
       { "category": "ROOKIE", "lap_time": ">1:47.5" }
     ],
-    "pitlane_delta": "?",
+    "pitlane_delta": 55,
     "setups": [
       {
         "driver_id": "SEN",
@@ -134,10 +130,10 @@
           {
             "name": "Mercedes AMG GT3 (2015)",
             "source": "CDA (Race)",
-            "lap_time": 116,
+            "lap_time": 108,
             "fuel_map": {
-              "1": 2.85
-              "2": 2.35
+              "1": 2.9,
+              "2": 2.35,
               "3": 2.35
             },
             "tire_pressures": {

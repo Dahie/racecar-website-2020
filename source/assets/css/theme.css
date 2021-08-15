@@ -417,13 +417,13 @@ footer .credits {
 }
 ::-moz-selection {
 	text-shadow:none;
-	background:#fcfcfc;
-	background:rgba(255,255,255,.2);
+	background: #00CCFF;
+	color:  white;
 }
 ::selection {
 	text-shadow:none;
-	background:#fcfcfc;
-	background:rgba(255,255,255,.2);
+	background: #00CCFF;
+	color:  white;
 }
 img::selection {
 	background:0 0;

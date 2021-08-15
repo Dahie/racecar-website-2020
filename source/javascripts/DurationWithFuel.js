@@ -7,7 +7,7 @@ class DurationWithFuel extends Component {
     super(props);
     this.state = {
       fuelLoad: 60.0,
-      extraLaps: 0
+      extraLaps: 1
     }
     this.handleChange = this.handleChange.bind(this);
   }

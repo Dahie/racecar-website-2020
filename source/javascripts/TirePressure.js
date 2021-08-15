@@ -4,7 +4,7 @@ function TirePressure(props) {
   return (
     <>
       <tr>
-        <th rowspan="2">{props.track_temperature}</th>
+        <th rowSpan="2">{props.track_temperature}</th>
         <td>{props.psi[0]}</td>
         <td>{props.psi[1]}</td>
       </tr>

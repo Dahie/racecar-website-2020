@@ -6,7 +6,7 @@ class FuelForDuration extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      extraLaps: 0
+      extraLaps: 1
     }
   }
 

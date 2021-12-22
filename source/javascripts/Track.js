@@ -1,23 +1,35 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-import EngineMaps from './EngineMaps'
-import LapTime from './LapTime'
-import TirePressures from './TirePressures'
+import CarSetup from './CarSetup'
 
-function Track(props) {
-  return (
-    <div className="card mb-3" id={props.reference}>
-      <div className="card-header">{props.name}</div>
+
+class Track extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+        image: ""
+    };
+  }
+
+  componentWillMount() {
+    this.state.image = require('./track_maps/' + this.props.reference + '.png').default;
+    console.log(this.state.image);
+  }
+
+  render () {
+    return(<div id={this.props.reference} className="card mb-3">
+      <div className="card-header">{this.props.name}</div>
       <div className="row no-gutters">
         <div className="col-md-6">
-          <a href={props.track_map} data-lightbox="trackmaps">
-            <img src={props.track_map} className="img-fluid" />
+          <a href={this.state.image} data-lightbox="trackmaps">
+            <img src={this.state.image} className="img-fluid" />
           </a>
           <div className="card-body">
             <p className="card-text">Settings based on Coach-Dave-Academy Race-Setup</p>
           </div>
           <ul className="list-group list-group-flush">
-            {props.links.map(entry => (
+            {this.props.links.map(entry => (
               <li key={entry.url} className="list-group-item">
                 <a href={entry.url}>{entry.title}</a>
               </li>
@@ -25,7 +37,7 @@ function Track(props) {
             <li className="list-group-item">
               <table className="table">
                 <tbody>
-                  {props.reference_lap_times.map(entry => (
+                  {this.props.reference_lap_times.map(entry => (
                     <tr key={entry.category}>
                       <th>{entry.category}</th>
                       <td>{entry.lap_time}</td>
@@ -39,7 +51,7 @@ function Track(props) {
                 <tbody>
                   <tr>
                     <th>Pitlane Delta</th>
-                    <td>{props.pitlane_delta}s</td>
+                    <td>{this.props.pitlane_delta}s</td>
                   </tr>
                 </tbody>
               </table>
@@ -48,61 +60,38 @@ function Track(props) {
         </div>
         <div className="col-md-6">
           <div className="card-body">
-            {props.setups.map(setup => (
-              <car-setup-list key={setup.driver_id}>
-                <h3>{setup.driver_id}</h3>
 
-                {setup.cars.map(car => (
-                  <car-setup>
-                    <h4>{car.name}</h4>
-                    <table className="table">
-                      <thead>
-                        <tr>
-                          <th></th>
-                          <th>Dry (<LapTime duration={car.lap_time} />)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th>Fuel consumption</th>
-                          <td><EngineMaps maps={car.fuel_map} /></td>
-                        </tr>
+            <ul class="nav nav-pills">
 
-                        <tr>
-                          <th>Tire Pressures</th>
-                          <td>
-                            <TirePressures tire_pressures={car.tire_pressures} />
-                          </td>
-                        </tr>
+              {this.props.setups.map(setup => (
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{setup.driver_id}</a>
+                  <div class="dropdown-menu">
+                    {setup.cars.map(car => (
+                      <a class="dropdown-item" href="#">{car.name}</a>
+                    ))}
+                  </div>
+                </li>
+              ))}
+            </ul>
 
-                        <tr>
-                          <th>Brake Material</th>
-                          <td>
-                            <table class="table table-bordered table-sm">
-                              <tbody>
-                                <tr>
-                                  <th>Sprint race (&lt;2h)</th>
-                                  <td>1</td>
-                                </tr>
-                                <tr>
-                                  <th>Endurance race (&gt;2h)</th>
-                                  <td>2</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </car-setup>
-                ))}
-              </car-setup-list>
+
+            {this.props.setups.map(setup => (
+              <div class="tab-content">
+                <car-setup-list key={setup.driver_id}>
+                  {setup.cars.map(car => (
+                    <div class="tab-pane" id={car.name} role="tabpanel">
+                      <CarSetup car={car} />
+                    </div>
+                  ))}
+                </car-setup-list>
+              </div>
             ))}
           </div>
         </div>
       </div>
-    </div>
-  )
+    </div>)
+  }
 }
 
 export default Track;

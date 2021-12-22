@@ -29,12 +29,7 @@ module.exports = {
         use: [
           {
             loader: 'url-loader',
-            options: {
-              name: "[path][name]-[hash].[ext]",
-              limit: 50000,
-              esModule: false, // <- here
-              publicPath: ''
-            }
+            options: {}
           }
         ]
       },

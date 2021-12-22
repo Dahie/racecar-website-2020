@@ -55,9 +55,10 @@ class FuelCalculator extends Component {
                 </div>
               </div>
               <div className="form-group row">
-                <label className="col-sm-4 col-form-label">Fuel use l per lap:</label>
+                <label className="col-sm-4 col-form-label">Fuel use in l per Lap:</label>
                 <div className="col-sm-8">
                   <input type="number" className="form-control" value={fuelPerLap} step='0.1' onChange={this.handleChange} />
+                  <input type="range" value={fuelPerLap} onChange={this.handleChange} step='0.1' className="form-control-range" min="1" max="10" />
                 </div>
               </div>
               <DurationWithFuel

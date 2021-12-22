@@ -31,7 +31,9 @@ class DurationWithFuel extends Component {
         <div className="form-group row">
           <label className="col-sm-4 col-form-label">Fuel load in l:</label><br />
           <div className="col-sm-8">
-            <input type="number" className="form-control" value={this.state.fuelLoad} step='1.0' onChange={this.handleChange} /></div>
+            <input type="number" className="form-control" value={this.state.fuelLoad} step='1.0' onChange={this.handleChange} />
+            <input type="range" value={this.state.fuelLoad} onChange={this.handleChange} step='1.0' className="form-control-range" min="1" max="120" />
+            </div>
           </div>
         <p>Remaining laps: {this.lapsAtFuelUsage() }</p>
         <p>

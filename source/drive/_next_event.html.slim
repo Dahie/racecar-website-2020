@@ -1,0 +1,53 @@
+.container.content-section
+  h3.text-center Next Event
+
+  .card
+    = thumb_tag 'cars/RC-21-EM/20220113203449_3.jpg', '750x320#', class: 'card-img'
+    .card-img-overlay.text-white
+      h5.card-title 2022/01/22 - 4 Hours of Mount Panorama - BMW M4 GT3
+      p.card-text 4 hours endurance race on the challenging roads of Mount Panorama
+      p.card-footer
+        ul.list-inline.banner-social-buttons
+          li.d-inline
+            a.btn.btnghost.btn-lg.btn-light href="https://twitch.com/thedahie"
+              i.fa.fa-twitch.fa-fw
+              span.network-name Onboard with Radio
+          li.d-inline
+            a.btn.btnghost.btn-lg.btn-light href="https://www.youtube.com/channel/UC8nj8PMXqd_M1NvsQPfY4Sw/featured"
+              i.fa.fa-youtube.fa-fw
+              span.network-name Race Stream With Commentary
+
+    .row
+      .col
+        .card-body
+          h5.card-title Drivers
+          ul.list-group
+            li.list-group-item
+              = "Daniel Senff (#{link_to('Twitter', 'https://twitter.com/dahie')})"
+            li.list-group-item
+              = "Pablo Gerrida (#{link_to('Twitter', 'https://twitter.com/okkodeine')})"
+      .col
+        .card-body
+          table.table
+            thead
+              tr
+                th Session
+                th Beginn
+                th Duration
+            tbody
+              tr
+                td Practice 1
+                td= "2022-01-22 16:00:00".to_datetime.in_time_zone('Berlin').strftime('%H:%M')
+                td 30 min
+              tr
+                td Qualifying
+                td= "2022-01-22 16:30:00".to_datetime.in_time_zone('Berlin').strftime('%H:%M')
+                td 30 min
+              tr
+                td Race
+                td= "2022-01-22 17:00:00".to_datetime.in_time_zone('Berlin').strftime('%H:%M')
+                td 240 min
+    .row.justify-content-md-center
+      .col-md-10
+        = thumb_tag 'track_maps/mount_panorama.png', '750x520#'
+

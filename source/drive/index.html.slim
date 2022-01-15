@@ -18,35 +18,7 @@ section#trackmaps
           = thumb_tag "track_maps/#{track}.png", '390x202#', class: 'img-fluid'
 
 section#next-event
-  .container.content-section
-    h3.text-center Next event: 2021/07/17 - 4 Hours of Mount Panorama - GT3
-    ul.list-group.list-group-flush
-      li.list-group-item
-        = link_to 'Mount Panorama', "#mount_panorama"
-      li.list-group-item Weather: Medium cloud cover and mild variability will leave low chance for light rain. Warm Temperatures.
-    table.table
-      thead
-        tr
-          th Session
-          th Beginn
-          th Duration
-      tbody
-        tr
-          td Practice 1 (optional)
-          td= "2021-04-17 12:00:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
-          td 60 min (Race Weekend Day 1 - 4:00 PM)
-        tr
-          td Practice 2 (optional)
-          td= "2021-04-17 12:00:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
-          td 30 min (Race Weekend Day 1 - 7:00 PM)
-        tr
-          td Qualifying
-          td= "2021-04-17 14:30:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
-          td 20 min (Race Weekend Day 2 - 4:00 PM)
-        tr
-          td Race
-          td= "2021-04-17 15:00:00 -04:00".to_datetime.in_time_zone('Berlin').strftime(' %H:%M')
-          td 240 min (Race Weekend Day 2 - 6:00PM)
+  = partial 'next_event'
 
 
 #root
@@ -61,6 +33,7 @@ section#links
           li= link_to 'Coach Dave Academy', 'https://coachdaveacademy.com/', target: :blank
           li= link_to 'The Sim Grid Daily Races', 'https://beta.thesimgrid.com', target: :blank
           li= link_to 'ACCWiki Car Setup & Pitstops', 'https://www.acc-wiki.info/wiki/Car_Setups_and_Pitstop', target: :blank
+          li= link_to 'Aris: How to race', 'https://www.youtube.com/watch?v=fhNC_BoWtzk', target: :blank
           li= link_to 'Fuel calculator', 'https://mythiq.net/fuelcalc/', target: :blank
           li= link_to 'FOV calculator', 'https://dinex86.github.io/FOV-Calculator/', target: :blank
           li= link_to 'Setup Guide', 'https://felixdicit.com/assetto-corsa-setup-tips/', target: :blank

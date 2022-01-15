@@ -455,13 +455,24 @@ p.lead {
 	color:#333;
 	margin:20px 5px 0 5px;
 	display:inline-block;
-    min-width: 150px;
+   min-width: 150px;
 }
 .btnghost:hover {
 	background-color:#333;
 	color:#fff;
 	border:2px solid #333;
 }
+
+
+.btnghost.btn-light {
+	background-color: white;
+}
+.btnghost.btn-light:hover {
+	background-color:#333;
+	color:#fff;
+	border:2px solid #eee;
+}
+
 .highlightlink {
 	border-bottom:1px dashed #ccc;
 	font-weight:400;
@@ -586,4 +597,12 @@ section {
 	border-bottom:2px solid var(--secondary-color);
 	outline:0;
 	outline: none;
+}
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6 {
+	color: var(--secondary-color);
 }

@@ -208,7 +208,6 @@ a:hover,a:focus {
 .intro .intro-body:after {
 	content: '';
   position: absolute;
-  z-index:-1;
   bottom: -15px;
   left: 0;
   width: 100%;
@@ -220,11 +219,10 @@ a:hover,a:focus {
   -webkit-mask-position: 0px 0px;
   mask-size: 100% 200%;
   mask-position: 0px 0px;
-
+  pointer-events: none;
   z-index: 1;
   animation: animatedBackground 5s linear infinite;
 }
-
 .intro .intro-body .brand-heading {
 	font-size:40px;
 	text-transform: lowercase;

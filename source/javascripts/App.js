@@ -1,6 +1,7 @@
 import React from 'react'
 
 import FuelCalculator from './FuelCalculator'
+import DeltaCalculator from './DeltaCalculator'
 import TrackGuide from './TrackGuide'
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
     <div className="container content-section">
       <h3 className="text-center">Fuel calculation</h3>
       <FuelCalculator />
+
+      <h3 className="text-center">Delta calculation</h3>
+      <DeltaCalculator />
     </div>
   </section>
 

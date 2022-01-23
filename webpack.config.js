@@ -11,6 +11,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, '.tmp/dist'),
+    publicPath: '/',
     filename: 'assets/javascripts/[name].bundle.js'
   },
   resolve: {
@@ -28,7 +29,7 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|svg|ico|jpg|jpeg|png)$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {}
           }
         ]

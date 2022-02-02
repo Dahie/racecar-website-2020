@@ -1,5 +1,5 @@
-import $ from 'jquery';
-import './vendor/bootstrap.min.js';
-import popper from 'popper.js';
-import 'lightbox2';
+import 'bootstrap';
 import * as theme from './theme.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/theme.css';
+import '../css/timeline.css';

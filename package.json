@@ -1,13 +1,13 @@
 {
-  "name": "codeless",
+  "name": "racecar",
   "version": "1.0.0",
   "description": "Middleman starter template with yarn & webpack",
-  "repository": "git@github.com:flexbox/codeless",
-  "author": "flexbox <dleuliette@gmail.com>",
+  "repository": "git@github.com:dahie/racecar-website-2020",
+  "author": "dahie <public@danielsenff.de>",
   "scripts": {
     "test": "mocha --require test/helpers/dom.js --compilers js:babel-core/register",
     "start": "NODE_ENV=development webpack --watch -d --color",
-    "build": "NODE_ENV=production webpack --bail -p"
+    "build": "NODE_ENV=production webpack --bail"
   },
   "postcss": {
     "plugins": {
@@ -19,9 +19,6 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.1.1",
     "babel-loader": "^8.1.0",
     "bootstrap": "4.6.1",
@@ -30,21 +27,30 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jquery": "^3.6.0",
     "lightbox2": "^2.11.3",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.1",
     "popper.js": "^1.16.1",
-    "postcss-loader": "^2.0.6",
+    "postcss-loader": "^6.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-select": "^4.3.0",
-    "sass-loader": "^6.0.6",
+    "sass-loader": "^12.0.0",
     "sinon": "^3.2.1",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.11",
     "webpack-manifest-plugin": "^2.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.6.0",
     "file-loader": "^6.2.0",
-    "url-loader": "^4.1.1"
+    "mini-css-extract-plugin": "^2.5.3",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-manifest": "^1.0.8"
   }
 }

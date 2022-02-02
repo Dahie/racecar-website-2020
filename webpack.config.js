@@ -1,14 +1,14 @@
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const Clean = require('clean-webpack-plugin');
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'eval-cheap-module-source-map',
   entry: {
-    all: path.join(__dirname, '/source/assets/javascripts/application.js'),
-    site: path.join(__dirname, '/source/javascripts/site.js'),
+    main: path.join(__dirname, '/source/assets/javascripts/main.js'),
+    drive: path.join(__dirname, '/source/javascripts/site.js'),
   },
+
   output: {
     path: path.join(__dirname, '.tmp/dist'),
     publicPath: '/',
@@ -35,31 +35,22 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        use: [
-          { loader: 'style-loader', options: { sourceMap: true } },
-          { loader: 'css-loader', options: { sourceMap: true } },
-          { loader: 'postcss-loader', options: { sourceMap: true } },
-          { loader: 'sass-loader', options: { sourceMap: true } }
-        ]
+        test: /\.(css)$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
+        test: /\.(js)$/,
+        exclude: /node_modules/,
         use: ['babel-loader']
       }
     ]
   },
   plugins: [
-    // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
-    // inside your code for any environment checks; UglifyJS will automatically
-    // drop any unreachable code.
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-      },
-    }),
-    new Clean(['.tmp']),
-    new ExtractTextPlugin('assets/stylesheets/[name].bundle.css'),
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin()
   ],
+  mode: 'development',
+  devServer: {
+    contentBase: path.resolve(__dirname, './build')
+  }
 };

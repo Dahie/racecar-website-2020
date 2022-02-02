@@ -10,8 +10,8 @@ set :js_dir,     'assets/javascripts'
 
 activate :dragonfly_thumbnailer
 
-dev_com = './node_modules/webpack/bin/webpack.js --watch -d --progress --color'
-prod_com = './node_modules/webpack/bin/webpack.js --bail -p'
+dev_com = './node_modules/webpack/bin/webpack.js --watch -d source-map --color'
+prod_com = './node_modules/webpack/bin/webpack.js --bail'
 
 activate :external_pipeline,
   name: :webpack,

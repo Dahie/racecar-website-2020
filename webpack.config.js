@@ -1,6 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
@@ -27,16 +27,12 @@ module.exports = {
     rules: [
       {
         test: /\.(woff|woff2|eot|ttf|svg|ico|jpg|jpeg|png)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {}
-          }
-        ]
+        type: 'asset/resource'
       },
       {
         test: /\.(css)$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [
+          MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
         test: /\.(js)$/,
@@ -49,7 +45,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin()
   ],
-  mode: 'development',
+  mode: process.env.NODE_ENV || 'development',
   devServer: {
     contentBase: path.resolve(__dirname, './build')
   }

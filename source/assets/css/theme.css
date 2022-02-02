@@ -10,7 +10,7 @@ $bright_blue: #00CCFF;
 
 @font-face {
   font-family: 'ZonaPro Bold';
-  src: url('/assets/webfonts/ZonaPro-Bold.otf') format('opentype');
+  src: url('../webfonts/ZonaPro-Bold.otf') format('opentype');
 }
 
 .sketchfab-embed-wrapper iframe {
@@ -23,7 +23,7 @@ body {
 	width:100%;
 	height:100%;
 	font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	color:#fff;
+	color:#333;
 	font-weight:300;
 	--primary-color: #1E0D61;
 	--secondary-color: #00CCFF;
@@ -80,6 +80,7 @@ a:hover,a:focus {
 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-family:"ZonaPro Bold", Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size:13px;
+	color: #fff;
 }
 .navbar-custom .dropdown-item {
 	font-size:13px;
@@ -184,7 +185,7 @@ a:hover,a:focus {
 	padding:100px 0 100px 0;
 	text-align:center;
 	color:#fff;
-	background-image: radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('/assets/images/pictures/20210213160707_1.jpg');
+	background-image: radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('../images/pictures/20210213160707_1.jpg');
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
@@ -212,7 +213,7 @@ a:hover,a:focus {
   left: 0;
   width: 100%;
   top:0;
-  background: transparent url('/assets/images/triangle-pattern.png');
+  background: transparent url('../images/triangle-pattern.png');
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
 	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
   -webkit-mask-size: 100% 200%;
@@ -404,6 +405,7 @@ footer {
 	position:relative;
 	clear:both;
 	background:#000;
+	color: #fff;
 }
 footer p {
 	margin:0;
@@ -555,11 +557,6 @@ img {
 section:after {
 	float:none;
 	clear:both;
-}
-section {
-	background-color:#f9f9f9;
-	color:#333;
-	overflow:hidden;
 }
 .done {
 	display:none;

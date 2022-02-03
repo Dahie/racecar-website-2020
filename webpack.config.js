@@ -27,7 +27,7 @@ module.exports = {
     rules: [
       {
         test: /\.(woff|woff2|eot|ttf|svg)$/,
-        type: 'asset/inline'
+        type: 'asset/resource'
       },
       {
         test: /\.(ico|jpg|jpeg|png)$/,

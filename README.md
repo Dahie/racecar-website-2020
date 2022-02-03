@@ -4,11 +4,12 @@
 
     bundle
     yarn install
+    middleman serve
 
 
 ## Deployment
 
-    ENV=production middleman deploy
+    ENV=production rake deploy
 
 ## Template Aries Bootstrap HTML
 

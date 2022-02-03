@@ -140,6 +140,7 @@ PLATFORMS
 
 DEPENDENCIES
   middleman!
+  middleman-cli
   middleman-dragonfly_thumbnailer
   middleman-livereload (~> 3.4)
   middleman-minify-html

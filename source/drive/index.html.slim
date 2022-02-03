@@ -1,7 +1,7 @@
 ---
 title: Drive support - RaceCar
+layout: drive
 ---
-
 .intro.vh-30
   .intro-body
     .container
@@ -16,7 +16,6 @@ section#trackmaps
       - %w[barcelona brands_hatch donington hungaroring imola kyalami laguna_seca misano monza mount_panorama nurburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
         = link_to "##{track}", class: 'col-sm-3 mb-3' do
           = thumb_tag "track_maps/#{track}.png", '390x202#', class: 'img-fluid'
-
 
 #root
 

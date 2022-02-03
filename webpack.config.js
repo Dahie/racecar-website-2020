@@ -26,7 +26,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(woff|woff2|eot|ttf|svg|ico|jpg|jpeg|png)$/,
+        test: /\.(woff|woff2|eot|ttf|svg)$/,
+        type: 'asset/inline'
+      },
+      {
+        test: /\.(ico|jpg|jpeg|png)$/,
         type: 'asset/resource'
       },
       {

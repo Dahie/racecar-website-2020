@@ -26,7 +26,7 @@ class FuelCalculator extends Component {
     this.state = {
       lapTime: 126,
       fuelPerLap: 3.5,
-      extraLaps: 0
+      extraLaps: 1
     }
 
     this.handleChange = this.handleChange.bind(this);

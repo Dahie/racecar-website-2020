@@ -12,10 +12,18 @@ layout: drive
 section#trackmaps
   .container.content-section
     h3.text-center Quickjump
-    .row
-      - %w[barcelona brands_hatch donington hungaroring imola kyalami laguna_seca misano monza mount_panorama nurburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder].each do |track|
-        = link_to "##{track}", class: 'col-sm-3 mb-3' do
-          = thumb_tag "track_maps/#{track}.png", '390x202#', class: 'img-fluid'
+    - tracks = %w[barcelona brands_hatch donington hungaroring imola kyalami laguna_seca misano monza mount_panorama nurburgring oulton_park paul_ricard silverstone snetterton spa suzuka zandvoort zolder]
+    - tracks.enum_for(:slice_after).with_index { |_, i| i % 4 == 3 }.to_a.each do |track_group|
+      .row.mb-2
+        - track_group.each do |track|
+          = link_to "##{track}", class: 'col' do
+            = thumb_tag "track_maps/#{track}.png", '390x202#', class: 'img-fluid'
+
+section#race_preparation
+  .container.content-section
+    iframe src="https://docs.google.com/document/d/e/2PACX-1vTPnU_yXMLdve1gGnpzaSM6UIbPQUqyPzutLuUmvAJxEnwJsiqoRqUP0a-pBP4p4Ld50OZHrEz6aDvg/pub?embedded=true"
+    p
+      = link_to 'Edit Document', 'https://docs.google.com/document/d/e/2PACX-1vTPnU_yXMLdve1gGnpzaSM6UIbPQUqyPzutLuUmvAJxEnwJsiqoRqUP0a-pBP4p4Ld50OZHrEz6aDvg/pub'
 
 #root
 

@@ -249,7 +249,7 @@ a:hover,a:focus {
 	}
 	.intro.vh-30 {
 		height: 30vh;
-		background-position-y: -30vh;
+		background-position-y: -11vh;
 	}
 	.intro.vh-30 .intro-body::after {
 		height: 30vh;
@@ -602,4 +602,20 @@ section:after {
 .text-white h5,
 .text-white h6 {
 	color: var(--secondary-color);
+}
+section#race_preparation .container.content-section iframe {
+	width: 29em;
+	min-height: 60em;
+}
+@media(min-width: 576px) {
+	section#race_preparation .container.content-section iframe {
+		width: 32em;
+		min-height: 60em;
+	}
+}
+@media(min-width: 768px) {
+	section#race_preparation .container.content-section iframe {
+		width: 50em;
+		min-height: 60em;
+	}
 }

@@ -14,7 +14,6 @@ class Track extends Component {
 
   componentWillMount() {
     this.state.image = require('./track_maps/' + this.props.reference + '.png').default;
-    console.log(this.state.image);
   }
 
   render () {

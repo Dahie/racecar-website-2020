@@ -1,80 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <title><%= current_page.data.title || "RaceCar" %></title>
 
-    <meta name="author" content="Team RaceCar" />
-    <meta name="publisher" content="" />
-    <meta name="copyright" content="Daniel Senff" />
-    <meta http-equiv="content-Type" content="text/html; utf-8" />
-    <meta http-equiv="Pragma" content="cache" />
-    <meta name="robots" content="INDEX,FOLLOW" />
-    <meta http-equiv="content-Language" content="en" />
-    <meta name="description" content="RaceCar is a virtual motorsports team participating in Simracing leagues." />
-    <meta name="keywords" content="motorsports, racecar, virtual, simracing, racing, grand prix 3, grand prix 4, rfactor, rfactor2, GP3DL, GP4IL, DSTM" />
-
-    <meta property="og:title" content="RaceCar - Virtual Motorsports Team">
-    <meta property="og:site_name" content="RaceCar - Virtual Motorsports Team">
-    <meta property="og:url" content="//team-racecar.org">
-    <meta property="og:description" content="RaceCar is a virtual motorsports team participating in Simracing leagues.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="<%= image_path 'social-graph.jpg' %>">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@team_racecar">
-    <meta name="twitter:description" content="RaceCar is a virtual motorsports team participating in Simracing leagues.">
-    <meta name="twitter:title" content="RaceCar - Virtual Motorsports Team">
-    <meta name="twitter:image" content="https://team-racecar.org/<%= image_path 'social-graph.jpg' %>">
+    <%= partial "meta" %>
 
     <%= stylesheet_link_tag 'main' %>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md navbar-custom fixed-top">
-      <div class="container">
-          <a class="navbar-brand" href="/index.html">RaceCar</a>
-          <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarsDefault">
-              <ul class="navbar-custom navbar-nav ml-auto">
+    <%= partial "navigation" %>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
+    <%= yield %>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="/history.html">History</a>
-                </li>
+    <%= partial "footer" %>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cars</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="/cars.html">Featured cars</a>
-                  <a class="dropdown-item" href="/series.html">Series cars</a>
-                  <a class="dropdown-item" href="/gallery.html">Gallery</a>
-                  </div>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="/contact.html">Join us</a>
-                </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-
-
-  <%= yield %>
-
-  <%= partial "footer" %>
-
-  <%= javascript_include_tag 'main.bundle' %>
-  <script defer data-domain="team-racecar.org" src="https://plausible.io/js/plausible.outbound-links.js"></script>
-</body>
-
+    <%= javascript_include_tag 'main.bundle' %>
+    <script defer data-domain="team-racecar.org" src="https://plausible.io/js/plausible.outbound-links.js"></script>
+  </body>
 </html>

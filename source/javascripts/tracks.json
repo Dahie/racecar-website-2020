@@ -236,6 +236,19 @@
             },
             "tire_pressures": {
             }
+          },
+          {
+            "name": "BMW M4 GT3",
+            "source": "Aggressive",
+            "lap_time": 166,
+            "fuel_map": {
+              "1": 2.9,
+              "2": 2.8,
+              "3": 2.6,
+              "4": 2.5
+            },
+            "tire_pressures": {
+            }
           }
         ]
       }

@@ -603,19 +603,19 @@ section:after {
 .text-white h6 {
 	color: var(--secondary-color);
 }
-section#race_preparation .container.content-section iframe {
+section#race_preparation iframe {
 	width: 29em;
 	min-height: 60em;
 }
 @media(min-width: 576px) {
-	section#race_preparation .container.content-section iframe {
+	section#race_preparation iframe {
 		width: 32em;
 		min-height: 60em;
 	}
 }
 @media(min-width: 768px) {
-	section#race_preparation .container.content-section iframe {
-		width: 50em;
+	section#race_preparation iframe {
+		width: 40em;
 		min-height: 60em;
 	}
 }

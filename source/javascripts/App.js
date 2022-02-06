@@ -2,11 +2,23 @@ import React from 'react'
 
 import FuelCalculator from './FuelCalculator'
 import DeltaCalculator from './DeltaCalculator'
+import Quickjump from './Quickjump'
+import RacePreparation from './RacePreparation'
 import TrackGuide from './TrackGuide'
 
 function App() {
   return (
 <div className={`react-root`}>
+
+  <section id="#quickjump">
+    <div className="container content-section">
+      <h3 className="text-center">Quickjump</h3>
+      <Quickjump />
+    </div>
+  </section>
+
+  <RacePreparation />
+
   <section id="#fuel">
     <div className="container content-section">
       <h3 className="text-center">Fuel calculation</h3>

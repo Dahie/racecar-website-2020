@@ -140,13 +140,12 @@ PLATFORMS
 
 DEPENDENCIES
   middleman!
-  middleman-cli
   middleman-dragonfly_thumbnailer
-  middleman-livereload (~> 3.4)
+  middleman-livereload
   middleman-minify-html
   rake
   slim
   webrick
 
 BUNDLED WITH
-   2.3.3
+   2.4.6

@@ -7,7 +7,7 @@ function RacePreparation(props) {
         <div class="content-section">
           <div class="row">
             <div class="col">
-              <iframe src="https://docs.google.com/document/d/e/2PACX-1vTPnU_yXMLdve1gGnpzaSM6UIbPQUqyPzutLuUmvAJxEnwJsiqoRqUP0a-pBP4p4Ld50OZHrEz6aDvg/pub?embedded=true" />
+              <iframe src="https://docs.google.com/document/d/e/2PACX-1vTJIuFd7owI46oQVcFr0nEuay6fejwco0x53F-jPacTKz4k0UBA0ETmGY9CkPQiMW-fuylH2w8aOIvB/pub?embedded=true" />
               <p>
                 <a class="btn btnghost" href="https://docs.google.com/document/d/e/2PACX-1vTPnU_yXMLdve1gGnpzaSM6UIbPQUqyPzutLuUmvAJxEnwJsiqoRqUP0a-pBP4p4Ld50OZHrEz6aDvg/pub">Edit Document</a>
               </p>

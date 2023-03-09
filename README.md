@@ -2,6 +2,7 @@
 
 ## Setup Development
 
+    brew install imagemagick
     bundle
     yarn install
     middleman serve

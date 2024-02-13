@@ -898,5 +898,33 @@
         ]
       }
     ]
+  },
+  {
+    "reference": "indianapolis",
+    "name": "Indianapolis",
+    "links": [
+      
+    ],
+    "reference_lap_times": [
+      
+    ],
+    "pitlane_delta": 0,
+    "setups": [
+      {
+        "driver_id": "SEN",
+        "cars": [
+          {
+            "name": "BMW M4 (2023)",
+            "source": "Aggressive",
+            "lap_time": 104,
+            "fuel_map": {
+              "1": 2.17
+            },
+            "tire_pressures": {
+            }
+          }
+        ]
+      }
+    ]
   }
 ]

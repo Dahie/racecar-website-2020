@@ -2,7 +2,7 @@
 
 Author: Daniel Senff
 Contact: public [at] danielsenff.de, http://www.danielsenff.de
-Twitter: @dahie
+Mastodon: @dahie@chaos.social
 From: Berlin, Germany
 
 /* THANKS */

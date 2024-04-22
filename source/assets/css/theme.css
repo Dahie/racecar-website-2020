@@ -230,22 +230,23 @@ a:hover,a:focus {
 	color: white;
 }
 .intro .intro-body .brand-heading:after {
-  content: "";
-  box-sizing: content-box;
-  display: block;
-  position: relative;
-  top: 0px;
-  left: 30px;
-  height: 0px;
-  border: 2px solid var(--secondary-color);
-}
+	content: "";
+	box-sizing: content-box;
+	display: block;
+	position: relative;
+	top: 0px;
+	height: 0px;
+	width: 10rem;
+	margin-left: 35%;
+	border-bottom: 2px solid var(--secondary-color);
+  }
 .intro .intro-body .intro-text {
 	font-size:18px;
 }
 @media(min-width:768px) {
 	.intro {
-			height:100vh;
-			padding:0;
+		height: 100vh;
+		padding: 0;
 	}
 	.intro.vh-30 {
 		height: 30vh;
@@ -255,17 +256,22 @@ a:hover,a:focus {
 		height: 30vh;
 	}
 	.intro .intro-body .brand-heading {
-			font-size:60px;
-			margin-top:90px;
-			margin-bottom:20px;
-			display:inline-block;
-			padding:7px 0;
+		font-size: 60px;
+		margin-top: 90px;
+		margin-bottom: 20px;
+		display: inline-block;
+		padding: 7px 0;
 	}
 	.intro .intro-body .intro-text {
-			font-size:20px;
-				font-weight:300;
-				letter-spacing:3px;
+		font-size: 20px;
+		font-weight: 300;
+		letter-spacing: 3px;
 	}
+	.intro .intro-body .brand-heading:after {
+		left: 30px;
+		margin: 0;
+		width: 100%;
+	  }
 }
 .btn-circle {
 	width:50px;

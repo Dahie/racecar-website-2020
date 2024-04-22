@@ -14,4 +14,4 @@ Name: Daniel Fredrich
 
 Language: English
 Tools: middleman, aries template, webpack, react
-Software: sublime
+Software: vscode

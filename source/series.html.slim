@@ -12,6 +12,22 @@ section#cars
     .row.justify-content-center
       .col-md-8
         .card.mb-3
+          = thumb_tag 'cars/RC-22-EM/pic1.webp', '750x420#'
+          .card-body
+            h5.card-title RC-22-EM - BMW M4 GT3 - 2024
+            p.card-text
+              | Designed in 2022, the car only got its first appearance in 2024 in further GT3 endurance events in Assetto Corsa Competizione.
+            .row
+              = link_to image_path('cars/RC-22-EM/pic2.webp'), class: 'col-4', 'data-lightbox' => 'photos-rc22em' do
+                = thumb_tag 'cars/RC-22-EM/pic2.webp', '206x116#', class: 'img-fluid'
+              = link_to image_path('cars/RC-22-EM/pic3.webp'), class: 'col-4', 'data-lightbox' => 'photos-rc22em' do
+                = thumb_tag 'cars/RC-22-EM/pic3.webp', '206x116#', class: 'img-fluid'
+              = link_to image_path('cars/RC-22-EM/pic4.webp'), class: 'col-4', 'data-lightbox' => 'photos-rc22em' do
+                = thumb_tag 'cars/RC-22-EM/pic4.webp', '206x116#', class: 'img-fluid'
+
+    .row.justify-content-center
+      .col-md-8
+        .card.mb-3
           = thumb_tag 'cars/RC-21-EM/pic1.webp', '750x420#'
           .card-body
             h5.card-title RC-21-EM - BMW M4 GT3 - 2021

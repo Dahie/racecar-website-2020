@@ -60,14 +60,13 @@ class Track extends Component {
         <div className="col-md-6">
           <div className="card-body">
 
-            <ul class="nav nav-pills">
-
+            <ul className="nav nav-pills">
               {this.props.setups.map(setup => (
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{setup.driver_id}</a>
-                  <div class="dropdown-menu">
+                <li className="nav-item dropdown">
+                  <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{setup.driver_id}</a>
+                  <div className="dropdown-menu">
                     {setup.cars.map(car => (
-                      <a class="dropdown-item" href="#">{car.name}</a>
+                      <a className="dropdown-item" href="#">{car.name}</a>
                     ))}
                   </div>
                 </li>
@@ -76,10 +75,10 @@ class Track extends Component {
 
 
             {this.props.setups.map(setup => (
-              <div class="tab-content">
+              <div className="tab-content">
                 <car-setup-list key={setup.driver_id}>
                   {setup.cars.map(car => (
-                    <div class="tab-pane" id={car.name} role="tabpanel">
+                    <div className="tab-pane" id={car.name} role="tabpanel">
                       <CarSetup car={car} />
                     </div>
                   ))}

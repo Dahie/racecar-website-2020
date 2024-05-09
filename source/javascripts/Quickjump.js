@@ -1,6 +1,6 @@
 import React from 'react'
 
-const tracks = ["barcelona", "brands_hatch", "donington", "hungaroring", "imola", "kyalami", "laguna_seca", "misano", "monza", "mount_panorama", "nurburgring", "oulton_park", "paul_ricard", "silverstone", "snetterton", "spa", "suzuka", "zandvoort", "zolder"];
+const tracks = ["barcelona", "brands_hatch", "donington", "hungaroring", "imola", "indianapolis", "kyalami", "laguna_seca", "misano", "monza", "mount_panorama", "nurburgring", "oulton_park", "paul_ricard", "silverstone", "snetterton", "spa", "suzuka", "zandvoort", "zolder"];
 
 function Quickjump(props) {
 
@@ -14,10 +14,10 @@ function Quickjump(props) {
   return (
     <quick-jump>
       {createGroups(tracks, 4).map(track_group => (
-        <div class="row mb-2">
+        <div className="row mb-2">
           {track_group.map(track => (
-            <a href={'#' + track} class="col">
-              <img src={"/assets/images/track_maps/" + track + ".png"} class='img-fluid' />
+            <a href={'#' + track} className="col">
+              <img src={"/assets/images/track_maps/" + track + ".png"} className='img-fluid' />
             </a>
           ))}
         </div>

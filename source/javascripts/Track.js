@@ -2,27 +2,14 @@ import React, { Component } from 'react'
 
 import CarSetup from './CarSetup'
 
-
 class Track extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-        image: ""
-    };
-  }
-
-  componentWillMount() {
-    this.state.image = require('./track_maps/' + this.props.reference + '.png').default;
-  }
-
   render () {
     return(<div id={this.props.reference} className="card mb-3">
       <div className="card-header">{this.props.name}</div>
       <div className="row no-gutters">
         <div className="col-md-6">
-          <a href={this.state.image} data-lightbox="trackmaps">
-            <img src={this.state.image} className="img-fluid" />
+          <a data-lightbox="trackmaps">
+            <img src={this.props.image_url} className='img_fluid' />
           </a>
           <div className="card-body">
             <p className="card-text">Settings based on Coach-Dave-Academy Race-Setup</p>

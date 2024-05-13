@@ -238,7 +238,7 @@ a:hover,a:focus {
 	height: 0px;
 	width: 10rem;
 	margin-left: 35%;
-	border-bottom: 2px solid var(--secondary-color);
+	border-bottom: 4px solid var(--secondary-color);
   }
 .intro .intro-body .intro-text {
 	font-size:18px;
@@ -624,3 +624,16 @@ section#race_preparation iframe {
 		min-height: 60em;
 	}
 }
+
+
+.track_map.barcelona {
+    content: url("../images/track_maps/barcelona.png");
+}
+.track_map.brands_hatch {
+    content: url("../images/track_maps/barcelona.png");
+}
+
+.track_map.indianapolis {
+    content: url("../images/track_maps/indianapolis.png");
+}
+

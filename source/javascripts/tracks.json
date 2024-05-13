@@ -2,6 +2,7 @@
   {
     "reference": "brands_hatch",
     "name": "Brands-Hatch",
+    "image_url": "/assets/images/track_maps/brands_hatch.png",
     "links": [
     ],
     "reference_lap_times": [
@@ -47,6 +48,7 @@
   {
     "reference": "barcelona",
     "name": "Barcelona",
+    "image_url": "/assets/images/track_maps/barcelona.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=PR12e9Qwpo4" }
     ],
@@ -109,6 +111,7 @@
   {
     "reference": "donington",
     "name": "Donington",
+    "image_url": "/assets/images/track_maps/donington.png",
     "links": [
 
     ],
@@ -148,6 +151,7 @@
   {
     "reference": "hungaroring",
     "name": "Hungaroring",
+    "image_url": "/assets/images/track_maps/hungaroring.png",
     "links": [
 
     ],
@@ -185,7 +189,7 @@
   {
     "reference": "imola",
     "name": "Imola",
-    "track_map": "<%= image_path('track_maps/imola.png') %>",
+    "image_url": "/assets/images/track_maps/imola.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=2RKqCQT3DZI" }
     ],
@@ -258,7 +262,7 @@
   {
     "reference": "kyalami",
     "name": "Kyalami",
-    "track_map": "<%= image_path('track_maps/kyalami.png') %>",
+    "image_url": "/assets/images/track_maps/kyalami.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=qpHUfb9JCcQ" }
     ],
@@ -295,7 +299,7 @@
   {
     "reference": "laguna_seca",
     "name": "Laguna Seca",
-    "track_map": "<%= image_path('track_maps/laguna_seca.png') %>",
+    "image_url": "/assets/images/track_maps/laguna_seca.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=2RKqCQT3DZI" }
     ],
@@ -345,7 +349,7 @@
   {
     "reference": "misano",
     "name": "Misano",
-    "track_map": "<%= image_path('track_maps/misano.png') %>",
+    "image_url": "/assets/images/track_maps/misano.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=6Nf8lkz5mZ4" }
     ],
@@ -381,7 +385,7 @@
   {
     "reference": "monza",
     "name": "Monza",
-    "track_map": "<%= image_path('track_maps/monza.png') %>",
+    "image_url": "/assets/images/track_maps/monza.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=9llv5CAy9-0" }
     ],
@@ -440,7 +444,7 @@
   {
     "reference": "mount_panorama",
     "name": "Mount Panorama",
-    "track_map": "<%= image_path('track_maps/mount_panorama.png') %>",
+    "image_url": "/assets/images/track_maps/mount_panorama.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=OltueZoqYdw" },
       { "title": "Track guide by  Yorkie065", "url": "https://www.youtube.com/watch?v=xNnjoAV4TRA" }
@@ -501,7 +505,7 @@
   {
     "reference": "nurburgring",
     "name": "Nürburgring",
-    "track_map": "<%= image_path('track_maps/nurburgring.png') %>",
+    "image_url": "/assets/images/track_maps/nurburgring.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=OltueZoqYdw" }
     ],
@@ -537,7 +541,7 @@
   {
     "reference": "oulton_park",
     "name": "Oulton Park",
-    "track_map": "<%= image_path('track_maps/oulton_park.png') %>",
+    "image_url": "/assets/images/track_maps/oulton_park.png",
     "links": [
 
     ],
@@ -571,7 +575,7 @@
   {
     "reference": "paul_ricard",
     "name": "Paul Ricard",
-    "track_map": "<%= image_path('track_maps/paul_ricard.png') %>",
+    "image_url": "/assets/images/track_maps/paul_ricard.png",
     "links": [
 
     ],
@@ -609,7 +613,7 @@
   {
     "reference": "silverstone",
     "name": "Silverstone",
-    "track_map": "<%= image_path('track_maps/silverstone.png') %>",
+    "image_url": "/assets/images/track_maps/silverstone.png",
     "links": [
     ],
     "reference_lap_times": [
@@ -669,7 +673,7 @@
   {
     "reference": "snetterton",
     "name": "Snetterton",
-    "track_map": "<%= image_path('track_maps/snetterton.png') %>",
+    "image_url": "/assets/images/track_maps/snetterton.png",
     "links": [],
     "reference_lap_times": [],
     "pitlane_delta": 37,
@@ -695,7 +699,7 @@
   {
     "reference": "spa",
     "name": "Spa-Francorchamps",
-    "track_map": "<%= image_path('track_maps/spa.png') %>",
+    "image_url": "/assets/images/track_maps/spa.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill pt1", "url": "https://www.youtube.com/watch?v=DYf8_CALX8g" },
       { "title": "Watch Coaching with Gregor Schill pt2", "url": "https://youtu.be/MEMXfgttHVE?t=926" }
@@ -761,7 +765,7 @@
   {
     "reference": "suzuka",
     "name": "Suzuka",
-    "track_map": "<%= image_path('track_maps/suzuka.png') %>",
+    "image_url": "/assets/images/track_maps/suzuka.png",
     "links": [],
     "reference_lap_times": [
       { "category": "CDA", "lap_time": "1:59.8" },
@@ -830,7 +834,7 @@
   {
     "reference": "zandvoort",
     "name": "Zandvoort",
-    "track_map": "<%= image_path('track_maps/zandvoort.png') %>",
+    "image_url": "/assets/images/track_maps/zandvoort.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=bU0tUXPB7Rw" }
     ],
@@ -865,7 +869,7 @@
   {
     "reference": "zolder",
     "name": "Zolder",
-    "track_map": "<%= image_path('track_maps/zolder.png') %>",
+    "image_url": "/assets/images/track_maps/zolder.png",
     "links": [
       { "title": "Watch Coaching with Gregor Schill", "url": "https://www.youtube.com/watch?v=-7QCDSVaGjo" }
     ],
@@ -902,6 +906,7 @@
   {
     "reference": "indianapolis",
     "name": "Indianapolis",
+    "image_url": "/assets/images/track_maps/indianapolis.png",
     "links": [
       
     ],

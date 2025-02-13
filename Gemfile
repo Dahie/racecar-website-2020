@@ -1,9 +1,10 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'middleman', github: 'middleman/middleman'
-gem 'middleman-minify-html'
-gem 'middleman-dragonfly_thumbnailer'
+gem "middleman", github: "middleman/middleman", branch: "5.x"
+gem "middleman-minify-html"
+gem "middleman-dragonfly_thumbnailer"
 gem "middleman-livereload"
-gem 'slim'
-gem 'rake'
-gem 'webrick'
+gem "slim"
+gem "standardrb"
+gem "rake"
+gem "webrick"

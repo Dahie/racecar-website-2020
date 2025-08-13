@@ -16,7 +16,7 @@ function Quickjump(props) {
       {createGroups(Tracks, 4).map(track_group => (
         <div className="row mb-2">
           {track_group.map(track => (
-            <a href={'#' + track} className="col">
+            <a href={'#' + track.reference} className="col">
               <img src={track.image_url} className='img-fluid' />
             </a>
           ))}

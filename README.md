@@ -7,6 +7,7 @@
     yarn install
     middleman serve
 
+And open at http://localhost:4567
 
 ## Deployment
 

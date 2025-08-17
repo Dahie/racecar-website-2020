@@ -12,6 +12,26 @@ section#cars
     .row.justify-content-center
       .col-md-8
         .card.mb-3
+          = thumb_tag 'cars/RC-24-EM/pic1.webp', '750x420#'
+          .card-body
+            h5.card-title RC-24-EM - BMW M4 GT3 - 2024
+            p.card-text
+              | Designed over 2024 and 2025 in the year of the dragon and the year of the snake. The drivers could choose their animal on the car.
+              | With the RC-24-EM Felix Schönhofen returned to active driving again with Assetto Corsa Competizione thereby reviving 
+              a href="https://equipe-mirage.org/" 
+                Mirage.
+            .row
+              = link_to image_path('cars/RC-24-EM/pic2.webp'), class: 'col-4', 'data-lightbox' => 'photos-rc24em' do
+                = thumb_tag 'cars/RC-24-EM/pic2.webp', '206x116#', class: 'img-fluid'
+              = link_to image_path('cars/RC-24-EM/pic3.webp'), class: 'col-4', 'data-lightbox' => 'photos-rc24em' do
+                = thumb_tag 'cars/RC-24-EM/pic3.webp', '206x116#', class: 'img-fluid'
+              = link_to image_path('cars/RC-24-EM/pic4.webp'), class: 'col-4', 'data-lightbox' => 'photos-rc24em' do
+                = thumb_tag 'cars/RC-24-EM/pic4.webp', '206x116#', class: 'img-fluid'
+
+
+    .row.justify-content-center
+      .col-md-8
+        .card.mb-3
           = thumb_tag 'cars/RC-22-EM/pic1.webp', '750x420#'
           .card-body
             h5.card-title RC-22-EM - BMW M4 GT3 - 2024

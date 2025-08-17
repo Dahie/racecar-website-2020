@@ -1,0 +1,2 @@
+RewriteEngine On
+Redirect 301 /cars/(.*).html http://racecarf1.com/cars.html

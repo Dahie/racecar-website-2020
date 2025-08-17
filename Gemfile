@@ -1,10 +1,11 @@
 source "https://rubygems.org"
 
-gem "middleman", github: "middleman/middleman", branch: "5.x"
+gem "middleman", "~>4.6"
 gem "middleman-minify-html"
 gem "middleman-dragonfly_thumbnailer"
 gem "middleman-livereload"
 gem "slim"
+gem "tilt"
 gem "standardrb"
 gem "rake"
 gem "webrick"

@@ -4,7 +4,7 @@
 
     brew install imagemagick
     bundle
-    yarn install
+    npm install
     middleman serve
 
 And open at http://localhost:4567

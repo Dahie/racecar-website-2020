@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source "https://gem.coop"
 
 gem "middleman", "~>4.6"
 gem "middleman-minify-html"

@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "autoprefixer": "^9.1.1",
+    "autoprefixer": "^10.4.27",
     "bootstrap": "4.6.1",
     "jquery": "^3.6.0",
     "lightbox2": "^2.11.3",
@@ -45,7 +45,7 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4",
+    "webpack-dev-server": "^5.2.3",
     "webpack-manifest-plugin": "^4.0"
   }
 }

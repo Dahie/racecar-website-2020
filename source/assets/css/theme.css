@@ -13,27 +13,36 @@ $bright_blue: #00CCFF;
   src: url('../webfonts/ZonaPro-Bold.otf') format('opentype');
 }
 
+:root {
+  --primary-color: #1E0D61;
+  --secondary-color: #00CCFF;
+  --dark-gray: #333;
+  --light-gray: #F6F6F6;
+  --margin: 35px;
+  --transition-time: 0.1s;
+  --lb-nav-transition-speed: 0.3s;
+  --lb-caption-link-color: #00CCFF;
+}
+
 .sketchfab-embed-wrapper iframe {
-  width: 100%;
-  height: 50vh;
-  touch-action: none;
+	width: 100%;
+	height: 50vh;
+	touch-action: none;
 }
 
 body {
 	width:100%;
 	height:100%;
 	font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	color:#333;
+	color: var(--dark-gray);
 	font-weight:300;
-	--primary-color: #1E0D61;
-	--secondary-color: #00CCFF;
 }
 html {
 	width:100%;
 	height:100%;
 }
 h1,h2,h3,h4,h5,h6 {
-	margin:0 0 35px;
+	margin:0 0 var(--margin);
 	font-family:"ZonaPro Bold", Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:0;
 	color: var(--primary-color);
@@ -48,9 +57,9 @@ img {
 }
 @media(min-width:768px) {
 	p {
-			margin:0 0 35px;
-			font-size:20px;
-			line-height:1.6;
+		margin: 0 0 var(--margin);
+		font-size:20px;
+		line-height:1.6;
 	}
 }
 a {
@@ -123,9 +132,7 @@ a:hover,a:focus {
 	text-decoration: none
 }
 .nav-link a {
-	-webkit-transition:background .3s ease-in-out;
-	-moz-transition:background .3s ease-in-out;
-	transition:background .3s ease-in-out;
+	transition: background var(--transition-time) ease-in-out;
 }
 .nav-link:hover {
 	outline:0;
@@ -150,24 +157,24 @@ a:hover,a:focus {
 }
 @media(min-width:768px) {
 	.navbar-custom {
-			padding:15px 0;
-			border-bottom:0;
-			font-size:13px;
-			background:0 0;
-			-webkit-transition:background .5s ease-in-out,padding .5s ease-in-out;
-			-moz-transition:background .5s ease-in-out,padding .5s ease-in-out;
-			transition:background .5s ease-in-out,padding .5s ease-in-out;
+		padding: 15px 0;
+		border-bottom: 0;
+		font-size: 13px;
+		background:0 0;
+		-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+		-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+		transition: background .5s ease-in-out,padding .5s ease-in-out;
 	}
 	.navbar-custom.top-nav-collapse {
 		padding:1px 0;
 		border-bottom:1px solid rgba(255,255,255,.3);
-		color:#333;
+		color: var(--dark-gray);
 		background:#fff;
 	}
 	.navbar-custom.top-nav-collapse a {
-			color: var(--primary-color);
-			display:inline-block;
-			text-decoration: none;
+		color: var(--primary-color);
+		display: inline-block;
+		text-decoration: none;
 	}
 	.navbar-expand-md .navbar-custom.navbar-nav .nav-link {
 		padding-right:1rem;
@@ -196,6 +203,22 @@ a:hover,a:focus {
 	display:table-cell;
 	vertical-align:middle;
 }
+section .celebration {
+	padding: 35px;
+	padding-bottom: 350px;
+	margin-bottom: var(--margin);
+	border-radius: var(--margin);
+	background: var(--light-gray) left bottom url("../images/25y-background.svg") no-repeat;
+	background-size: 300%;
+	text-align: left;
+}
+section .celebration img {
+	border-radius: var(--margin);
+}
+section .celebration p {
+	margin-bottom: var(--margin);
+}
+
 @keyframes animatedBackground {
 	from {
 		mask-position: 0 100%;
@@ -207,7 +230,7 @@ a:hover,a:focus {
 	}
 }
 .intro .intro-body:after {
-	content: '';
+  content: '';
   position: absolute;
   bottom: -15px;
   left: 0;
@@ -271,6 +294,13 @@ a:hover,a:focus {
 		margin: 0;
 		width: 100%;
 	  }
+	section .celebration {
+		padding: 35px;
+		background-size: cover;
+	}
+	section .celebration p {
+		margin-bottom: 0;
+	}
 }
 .btn-circle {
 	width:50px;
@@ -283,9 +313,7 @@ a:hover,a:focus {
 	font-size: 20px;
 	color:#fff;
 	background:0 0;
-	-webkit-transition:background .3s ease-in-out;
-	-moz-transition:background .3s ease-in-out;
-	transition:background .3s ease-in-out;
+	transition: background var(--transition-time) ease-in-out;
 }
 .btn-circle:hover, .btn-circle:focus {
 	outline:0;
@@ -293,47 +321,24 @@ a:hover,a:focus {
 	background:rgba(255,255,255,.1);
 }
 .btn-circle i.animated {
-	-webkit-transition-property:-webkit-transform;
-	-webkit-transition-duration:1s;
-	-moz-transition-property:-moz-transform;
-	-moz-transition-duration:1s;
+	transition-duration: 1s;
+	transition-property: transform;
 }
 .btn-circle:hover i.animated {
-	-webkit-animation-name:pulse;
-	-moz-animation-name:pulse;
-	-webkit-animation-duration:1.5s;
-	-moz-animation-duration:1.5s;
-	-webkit-animation-iteration-count:infinite;
-	-moz-animation-iteration-count:infinite;
-	-webkit-animation-timing-function:linear;
-	-moz-animation-timing-function:linear;
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
-@-webkit-keyframes pulse {
+@keyframes pulse {
 	0% {
-			-webkit-transform:scale(1);
-			transform:scale(1);
+		transform:scale(1);
 	}
 	50% {
-			-webkit-transform:scale(1.2);
-			transform:scale(1.2);
+		transform:scale(1.2);
 	}
 	100% {
-			-webkit-transform:scale(1);
-			transform:scale(1);
-	}
-}
-@-moz-keyframes pulse {
-	0% {
-			-moz-transform:scale(1);
-			transform:scale(1);
-	}
-	50% {
-			-moz-transform:scale(1.2);
-			transform:scale(1.2);
-	}
-	100% {
-			-moz-transform:scale(1);
-			transform:scale(1);
+		transform:scale(1);
 	}
 }
 .content-section {
@@ -343,8 +348,8 @@ a:hover,a:focus {
 }
 @media(min-width:767px) {
 	.content-section {
-			padding:150px 0;
-				 clear:both;
+		padding:150px 0;
+		clear:both;
 	}
 }
 .btn {
@@ -353,9 +358,7 @@ a:hover,a:focus {
 	text-decoration: none;
 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:400;
-	-webkit-transition:all .3s ease-in-out;
-	-moz-transition:all .3s ease-in-out;
-	transition:all .3s ease-in-out;
+	transition: all var(--transition-time) ease-in-out;
 }
 .btn-default {
 	border:1px solid #42dca3;
@@ -373,17 +376,17 @@ ul.banner-social-buttons {
 }
 @media(max-width:1199px) {
 	ul.banner-social-buttons {
-			margin-top:15px;
+		margin-top:15px;
 	}
 }
 @media(max-width:767px) {
 	ul.banner-social-buttons li {
-			display:block;
-			margin-bottom:20px;
-			padding:0;
+		display:block;
+		margin-bottom:20px;
+		padding:0;
 	}
 	ul.banner-social-buttons li:last-child {
-			margin-bottom:0;
+		margin-bottom:0;
 	}
 	.intro .intro-body .brand-heading {
 		font-size:40px;
@@ -398,18 +401,19 @@ ul.banner-social-buttons {
 		background-color:#fff;
 	}
 	.navbar-custom a {
-		color:#333;
+		color: var(--dark-gray);
 	}
 	.intro {
 		padding:100px 0 50px 0;
 	}
 }
 footer {
-	padding:40px 0;
+	padding: 80px 0;
 	z-index:1;
 	position:relative;
 	clear:both;
-	background:#000;
+	background: #000 url("../images/25y-line.svg") repeat-x;
+	background-size: 600px;
 	color: #fff;
 }
 footer p {
@@ -437,7 +441,7 @@ img::-moz-selection {
 	background:0 0;
 }
 body {
-	webkit-tap-highlight-color:rgba(255,255,255,.2);
+	-webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 .bgblue {
 	background:#22292c;
@@ -452,22 +456,22 @@ p.lead {
 	line-height:1.9;
 }
 .btnghost {
-	border:2px solid #333;
+	border: 2px solid var(--dark-gray);
 	background-color:transparent;
 	padding:15px 20px;
 	letter-spacing:3px;
 	font-size:12px;
 	text-transform:uppercase;
 	font-weight:400;
-	color:#333;
+	color: var(--dark-gray);
 	margin:20px 5px 0 5px;
 	display:inline-block;
    min-width: 150px;
 }
 .btnghost:hover {
-	background-color:#333;
+	background-color: var(--dark-gray);
 	color:#fff;
-	border:2px solid #333;
+	border:2px solid var(--dark-gray);
 }
 
 
@@ -475,13 +479,13 @@ p.lead {
 	background-color: white;
 }
 .btnghost.btn-light:hover {
-	background-color:#333;
+	background-color: var(--dark-gray);
 	color:#fff;
-	border:2px solid #eee;
+	border:2px solid var(light-gray);
 }
 
 .highlightlink {
-	border-bottom:1px dashed #ccc;
+	border-bottom:1px dashed --var(light-gray);
 	font-weight:400;
 }
 .bgcover {
@@ -492,6 +496,12 @@ p.lead {
 img {
 	max-width:100%;
 }
+.gallery {
+	padding-top: 40px;
+	background: url("../images/25y-line.svg") repeat-x;
+	background-size: 600px;
+}
+
 .gallery ul {
 	padding:0;
 	margin:0;
@@ -527,14 +537,11 @@ img {
 	top:40%;
 	left:50%;
 	margin:-14px 0 0 -16px;
-	background: url("data:image/svg+xml;
-	utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asodipodi%3D%22http%3A//sodipodi.sourceforge.net/DTD/sodipodi-0.dtd%22%20xmlns%3Ainkscape%3D%22http%3A//www.inkscape.org/namespaces/inkscape%22%20inkscape%3Aversion%3D%220.48.4%20r9939%22%20sodipodi%3Adocname%3D%22icon-fullscreen.svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20960%20560%22%0A%09%20enable-background%3D%22new%200%200%20960%20560%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Csodipodi%3Anamedview%20%20borderopacity%3D%221%22%20pagecolor%3D%22%23ffffff%22%20bordercolor%3D%22%23666666%22%20objecttolerance%3D%2210%22%20gridtolerance%3D%2210%22%20guidetolerance%3D%2210%22%20showgrid%3D%22false%22%20fit-margin-top%3D%220%22%20fit-margin-left%3D%220%22%20inkscape%3Azoom%3D%227.375%22%20inkscape%3Acx%3D%22-5.1525424%22%20inkscape%3Acy%3D%2216%22%20id%3D%22namedview11%22%20inkscape%3Awindow-x%3D%22-8%22%20inkscape%3Awindow-y%3D%22-8%22%20fit-margin-right%3D%220%22%20inkscape%3Apageopacity%3D%220%22%20fit-margin-bottom%3D%220%22%20inkscape%3Awindow-width%3D%221366%22%20inkscape%3Awindow-height%3D%22706%22%20inkscape%3Awindow-maximized%3D%221%22%20inkscape%3Apageshadow%3D%222%22%20inkscape%3Acurrent-layer%3D%22svg2%22%3E%0A%09%3C/sodipodi%3Anamedview%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22220%22%20y%3D%22260%22%20fill%3D%22%23FFFFFF%22%20width%3D%22536%22%20height%3D%2224%22/%3E%0A%3C/g%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22476%22%20y%3D%224%22%20fill%3D%22%23FFFFFF%22%20width%3D%2224%22%20height%3D%22556%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A") no-repeat;
+	background: url("data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asodipodi%3D%22http%3A//sodipodi.sourceforge.net/DTD/sodipodi-0.dtd%22%20xmlns%3Ainkscape%3D%22http%3A//www.inkscape.org/namespaces/inkscape%22%20inkscape%3Aversion%3D%220.48.4%20r9939%22%20sodipodi%3Adocname%3D%22icon-fullscreen.svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20960%20560%22%0A%09%20enable-background%3D%22new%200%200%20960%20560%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Csodipodi%3Anamedview%20%20borderopacity%3D%221%22%20pagecolor%3D%22%23ffffff%22%20bordercolor%3D%22%23666666%22%20objecttolerance%3D%2210%22%20gridtolerance%3D%2210%22%20guidetolerance%3D%2210%22%20showgrid%3D%22false%22%20fit-margin-top%3D%220%22%20fit-margin-left%3D%220%22%20inkscape%3Azoom%3D%227.375%22%20inkscape%3Acx%3D%22-5.1525424%22%20inkscape%3Acy%3D%2216%22%20id%3D%22namedview11%22%20inkscape%3Awindow-x%3D%22-8%22%20inkscape%3Awindow-y%3D%22-8%22%20fit-margin-right%3D%220%22%20inkscape%3Apageopacity%3D%220%22%20fit-margin-bottom%3D%220%22%20inkscape%3Awindow-width%3D%221366%22%20inkscape%3Awindow-height%3D%22706%22%20inkscape%3Awindow-maximized%3D%221%22%20inkscape%3Apageshadow%3D%222%22%20inkscape%3Acurrent-layer%3D%22svg2%22%3E%0A%09%3C/sodipodi%3Anamedview%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22220%22%20y%3D%22260%22%20fill%3D%22%23FFFFFF%22%20width%3D%22536%22%20height%3D%2224%22/%3E%0A%3C/g%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22476%22%20y%3D%224%22%20fill%3D%22%23FFFFFF%22%20width%3D%2224%22%20height%3D%22556%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A") no-repeat;
 	content:"";
 	opacity:0;
 	z-index:1;
-	-webkit-transition:all 0.3s linear;
-	-moz-transition:all 0.3s linear;
-	transition:all 0.3s linear;
+	transition: all var(--transition-time) linear;
 }
 .gallery ul li a:hover:before {
 	top:50%;
@@ -548,9 +555,7 @@ img {
 	background:rgba(0,0,0,0.3);
 	content:"";
 	opacity:0;
-	-webkit-transition:all 0.3s linear;
-	-moz-transition:all 0.3s linear;
-	transition:all 0.3s linear;
+	transition: all var(--transition-time) linear;
 }
 .gallery ul li a:hover:after {
 	opacity:1;
@@ -569,14 +574,11 @@ section:after {
 .error input,input.error,.error textarea,textarea.error {
 	background-color:#ffffff;
 	border-bottom:2px solid orangered !important;
-	-webkit-transition:border linear 0.2s,box-shadow linear 0.2s;
-	-moz-transition:border linear 0.2s,box-shadow linear 0.2s;
-	-o-transition:border linear 0.2s,box-shadow linear 0.2s;
-	transition:border linear 0.2s,box-shadow linear 0.2s;
+	transition: border linear var(--transition-time), box-shadow linear var(--transition-time);
 }
 #contactform input,#contactform textarea {
 	border:0px;
-	border-bottom:2px solid #333;
+	border-bottom:2px solid var(--dark-gray);
 	width:100%;
 	background-color:transparent;
 	padding:20px 0px;
@@ -590,9 +592,9 @@ section:after {
 	display:inline-block;
 }
 #contactform .btn:hover {
-	background-color:#333;
+	background-color: var(--dark-gray);
 	color:#fff;
-	border:2px solid #333;
+	border:2px solid  var(--dark-gray);
 }
 #contactform input:focus,#contactform input:active,#contactform textarea:focus,#contactform textarea:active {
 	border-top:0px;
@@ -624,7 +626,6 @@ section#race_preparation iframe {
 		min-height: 60em;
 	}
 }
-
 
 .track_map.barcelona {
     content: url("../images/track_maps/barcelona.png");
